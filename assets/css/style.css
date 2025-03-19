@@ -10,15 +10,58 @@
     "footer footer footer";
     border-style: solid;
     border-radius: 5px;
-   
+    margin-top: 5%;   
 }
+
+.container2 {  display: grid;
+  grid-template-columns: 1.5fr 0.3fr 1.2fr;
+  grid-template-rows: 0.5fr 2.3fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "cpu player1 player1"
+    "footer footer footer";
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 5%; 
+}
+
+.header { grid-area: header;
+  background-color: azure;
+  padding: 20px; }
+
+.cpu { grid-area: cpu;
+  background-color: darkgray;
+  height: auto;
+}
+
+.player1 { grid-area: player1;
+  background-color: darkgray;
+  height: auto;
+}
+
+.footer { grid-area: footer;
+  background-color: skyblue; 
+}
+
+
+body {
+     margin-left: 10%;
+     margin-right: 10%;
+     
+}
+
 
 .header { grid-area: header; 
           background-color: azure;
+          padding: 20px;
+          
           
 }
 .content { grid-area: content;
           background-color: darkgray;
+          height: auto;
           }
 
 .footer { grid-area: footer;
