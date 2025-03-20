@@ -8,9 +8,10 @@
     "header header header"
     "content content content"
     "footer footer footer";
-    border-style: solid;
+    border-style: solid; 
     border-radius: 5px;
     margin-top: 5%;   
+    
 }
 
 .container2 {  display: grid;
@@ -25,11 +26,9 @@
     border-style: solid;
     border-radius: 5px;
     margin-top: 5%; 
+    
 }
 
-.header { grid-area: header;
-  background-color: azure;
-  padding: 20px; }
 
 .cpu { grid-area: cpu;
   background-color: darkgray;
@@ -41,9 +40,7 @@
   height: auto;
 }
 
-.footer { grid-area: footer;
-  background-color: skyblue; 
-}
+
 
 
 body {
@@ -55,9 +52,13 @@ body {
 
 .header { grid-area: header; 
           background-color: azure;
-          padding: 20px;
+          padding-left: 20%;
+          padding-right: 20%;
           
           
+          
+         
+       
 }
 .content { grid-area: content;
           background-color: darkgray;
@@ -75,10 +76,12 @@ body {
   
   }
   }
-   @media screen and (max-width: 1000px) {
-  #mmlogomed {     display:none;       
+  @media screen and (max-width: 1000px) {
+    #mmlogomed {     display:none;       
+    
   }
   }
+ 
 
 
 
