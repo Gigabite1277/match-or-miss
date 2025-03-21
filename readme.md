@@ -3,12 +3,13 @@
 ## Strategy
 ## Project Goals
 
-  * To build a card playing game in which the user trys to match cards flashed on screenbefore then disappear.
-
+  * To build a card playing game in which the user trys to match cards flashed on screenbefore they disappear.
+  * By doing so the user is able to eliminate eney targets and progress to the end of the game.
 ## User Goals
 
-  * To try a beat the game by reacing a score of ten.
-  
+  * To eliminate all the enemy targets
+  * To try a beat the game by reaching a score of ten.
+  * 
 ---
 
 ## User Stories
