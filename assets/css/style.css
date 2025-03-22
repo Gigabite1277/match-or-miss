@@ -15,27 +15,9 @@
      border-width: 5px;
      border-radius: 6px;
      border-color: darkgreen;
-     
-        
-    
-    
+     min-width: 564px;
+  
 }
-
-.container2 {  display: grid;
-  grid-template-columns: 1.5fr 0.3fr 1.2fr;
-  grid-template-rows: 0.5fr 2.3fr 0.2fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header header header"
-    "cpu player1 player1"
-    "footer footer footer";
-    border-style: solid;
-    border-radius: 5px;
-    margin-top: 5%; 
-    
-}
-
 
 .cpu { grid-area: cpu;
   background-color: rgb(30, 29, 29);
@@ -57,6 +39,10 @@ body {
      
      
 }
+ #content2 
+          {
+            background-color: rgb(46, 46, 46);
+          }
 
 
 .header { grid-area: header; 
@@ -70,10 +56,10 @@ body {
           height: 600px;
           display: flex;
           flex-wrap: wrap;
-          justify-content:space-around;
+          justify-content: space-between;
           padding: 3%;     
 }
-
+ 
 
 
 #cpuwindow {
@@ -82,19 +68,53 @@ body {
   border-radius: 6px;
   border-color: darkgreen;
   width: 15%;
-  
- 
+  align-items: center;
+  flex-direction:column;
   
 }
 
-#hudwindow {  border-style: solid;
+#hudwindow {  
+  border-style: solid;
   border-width: 5px;
   border-radius: 6px;
   border-color: darkgreen;
-  width: 60%;;
-  object-fit: cover;
-  
+  width: 60%;
 }
+#ruleswindow 
+{
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+  border-color: darkgreen;
+  width: 60%;
+  margin-left: 20%;
+  font-size: xx-large;
+  color: chartreuse ;
+}  
+
+#homewindow 
+{
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+  border-color: darkgreen;
+  width: 60%;
+  margin-left: 20%;
+  font-size: xx-large;
+  color: chartreuse ;
+}  
+.nav-item 
+          {
+            border-style: solid;
+            border-radius: 5px;
+            background-color: forestgreen;
+            padding: 0px;
+          }
+
+wtbuilding500 
+            {
+              object-fit: fill;
+            }
 
 
 #p1window {
@@ -103,6 +123,7 @@ body {
   border-radius: 6px;
   border-color: darkgreen;
   width: 15%;
+  align-items: center;
   flex-direction:column;
   
   
