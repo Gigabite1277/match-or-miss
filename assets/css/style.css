@@ -71,13 +71,10 @@ body {
           display: flex;
           flex-wrap: wrap;
           justify-content:space-around;
-          
-          padding: 3%;
-
-          
-          
-          
+          padding: 3%;     
 }
+
+
 
 #cpuwindow {
   border-style: solid;
@@ -94,7 +91,9 @@ body {
   border-width: 5px;
   border-radius: 6px;
   border-color: darkgreen;
-  width: 60%;
+  width: 60%;;
+  object-fit: cover;
+  
 }
 
 
@@ -104,6 +103,7 @@ body {
   border-radius: 6px;
   border-color: darkgreen;
   width: 15%;
+  flex-direction:column;
   
   
   
