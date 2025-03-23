@@ -105,8 +105,10 @@ body {
 }  
 .nav-item 
           {
-            border-style: solid;
+            border-style:ridge;
             border-radius: 5px;
+            border-width: 2px;
+            border-color: silver;
             background-color: forestgreen;
             padding: 0px;
           }
