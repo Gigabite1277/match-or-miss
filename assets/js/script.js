@@ -9,3 +9,4 @@ document.getElementById('countdown').innerHTML=seconds;
       document.getElementById('countdown').innerHTML="GO!";
     }
 }
+document.getElementById("assets/sounds/countdown.mp3").play();
