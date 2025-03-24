@@ -132,3 +132,5 @@ All code written by me
 ## Acknowledgements
 
 ---
+NOTES:
+SOUNDS: Used Eleven labs to create game start sound effects for  "game start" countdown and "Game Over" voices.

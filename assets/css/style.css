@@ -79,7 +79,18 @@ body {
   border-radius: 6px;
   border-color: darkgreen;
   width: 60%;
+
+#countdown{
+  margin-top:200px;
+  font-size:100px;
+  font-family:consolas;
+  color:white;
+  font-weight:700;
+
 }
+  
+
+
 #ruleswindow 
 {
   border-style: solid;
