@@ -1,12 +1,13 @@
 var c = setInterval(showclock,1000)
 function showclock(){
-var seconds = document.getElementById('countdown').textContent;
+var seconds = document.getElementById('hudwindow').textContent;
   seconds--;
-document.getElementById('countdown').innerHTML=seconds;
+document.getElementById('hudwindow').innerHTML=seconds;
   if(seconds==0)
     {
     clearInterval(c);
-      document.getElementById('countdown').innerHTML="GO!";
+      document.getElementById('hudwindow').innerHTML="GO!";
     }
 }
-document.getElementById("assets/sounds/countdown.mp3").play();
+
+document.getElementById("countdown").play(countdown.mp3);

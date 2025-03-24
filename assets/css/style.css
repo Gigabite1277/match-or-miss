@@ -21,14 +21,13 @@
 
 .cpu { grid-area: cpu;
   background-color: rgb(30, 29, 29);
- 
+
 }
 
 .player1 { grid-area: player1;
   background-color: darkgray;
 
 }
-
 
 
 
@@ -39,10 +38,7 @@ body {
      
      
 }
- #content2 
-          {
-            background-color: rgb(46, 46, 46);
-          }
+
 
 
 .header { grid-area: header; 
@@ -78,15 +74,13 @@ body {
   border-width: 5px;
   border-radius: 6px;
   border-color: darkgreen;
+  color: aliceblue;
   width: 60%;
+}
 
-#countdown{
-  margin-top:200px;
-  font-size:100px;
-  font-family:consolas;
-  color:white;
-  font-weight:700;
-
+#countdown  
+{
+  font-size: 60px;
 }
   
 
