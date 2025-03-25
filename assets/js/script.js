@@ -11,3 +11,4 @@ var c = setInterval(showclock,1000)
  }
 
  document.getElementById('countdownaudio').play();
+ document.getElementById("wtbuilding650.png").src;

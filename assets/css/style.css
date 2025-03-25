@@ -74,13 +74,15 @@ body {
   border-width: 5px;
   border-radius: 6px;
   border-color: darkgreen;
-  color: aliceblue;
+  color: rgb(248, 14, 14);
   width: 60%;
+  display: flex;
+  justify-content: center;
 }
 
 #countdown  
 {
-  font-size: 60px;
+  font-size: 200px;
 }
   
 
