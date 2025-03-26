@@ -15,9 +15,12 @@ var c = setInterval(showclock,1000)
  
  function timer() {
   document.getElementById("countdown").innerHTML = "";
- // document.getElementById("hudwindow").innerHTML = wtbuilding650.png;
+  //document.getElementById("hudwindow").innerHTML = wtbuilding650.png;
 }
-let image = wtbuilding
+document.getElementById("hudwindow").style.backgroundImage = 'url(assets/images/wtbuilding650.png)';
+
+document.getElementById('militarydrums').play();
+
 
 //document.getElementById("hudwindow").src = "wtbuilding650.png";
 //document.getElementById("countdown").src = "wtbuilding650.png";
