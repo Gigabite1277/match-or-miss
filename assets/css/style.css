@@ -19,13 +19,17 @@
   
 }
 
-.cpu { grid-area: cpu;
-  justify-content: center;
+.cpuwindow { grid-area: cpu;
+  
+  
 
 }
 
-.player1 { grid-area: player1;
-
+#p1window { grid-area: player1;
+  align-items: center;
+  flex-direction:column;
+  background-color: black;
+  justify-items:center;
 
 }
 
@@ -64,8 +68,10 @@ body {
   border-radius: 6px;
   border-color: darkgreen;
   width: 15%;
+  display: flex;
   align-items: center;
   flex-direction:column;
+  background-color: black;
   
 }
 
@@ -78,6 +84,7 @@ body {
   width: 60%;
   display: flex;
   justify-content: center;
+  background-color: black;
  
   
  
@@ -101,6 +108,7 @@ body {
   margin-left: 20%;
   font-size: xx-large;
   color: chartreuse ;
+  background-color: black;
 }  
 
 #homewindow 
@@ -113,6 +121,7 @@ body {
   margin-left: 20%;
   font-size: xx-large;
   color: chartreuse ;
+  background-color: black;
 }  
 .nav-item 
           {
@@ -138,6 +147,8 @@ wtbuilding500
   width: 15%;
   align-items: center;
   flex-direction:column;
+  background-color: black;
+  justify-items:center;
   
   
   
