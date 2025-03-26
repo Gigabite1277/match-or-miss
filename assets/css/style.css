@@ -52,11 +52,11 @@ body {
 }
 .content { grid-area: content;
           background-color: rgb(46, 46, 46);
-          height: 600px;
+          height: 650px;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
-          padding: 3%;  
+          padding: 5%;  
          
 }
 
@@ -108,7 +108,7 @@ body {
 #countdown  
 {
   font-size: 200px;
-  z-index: 1;
+  
 }
   
 
@@ -145,16 +145,17 @@ body {
             border-width: 2px;
             border-color: silver;
             background-color: forestgreen;
-            padding: 0px;
+            padding: 3px;
             margin-right: 5%;
             margin-left: 5%;
           
           }
           
 
-wtbuilding500 
+#wtbuilding 
             {
               object-fit: fill;
+              background-image: url("wtbuilding650.png");
             }
 
 
@@ -162,6 +163,8 @@ wtbuilding500
 
 .footer { grid-area: footer;
           background-color: rgb(81, 113, 50);
+          padding-top:7%;
+          margin-top: 3;
         
 }
 
