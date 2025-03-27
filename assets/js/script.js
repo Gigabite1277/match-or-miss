@@ -21,21 +21,17 @@ document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/
 
 document.getElementById("militarydrums").play();
 
+//Newly made code
+let = cpudeck
 
+let cpudeck = ["[0] 2_of_clubs.png","[1] 2_of_diamonds.png", "[2] 2_of_hearts.png","[3] 2_of_hearts.png","[4]2_of_spades.png"];
 
+document.getElementById("cpudeck").onclick = function() {gamestart()};
 
-//document.getElementById("hudwindow").src = "wtbuilding650.png";
-//document.getElementById("countdown").src = "wtbuilding650.png";
-//document.getElementById("countdown").innerHTML = wtbuilding650.png;
-//document.getElementById("hudwindow").src = ("assets/images/wtbuilding650.png");
-
-
-
-var cpudeck = ['2_of_clubs', '2_of_diamonds', '2_of_hearts', '2_of_spades', '3_of_clubs', 'oranges'];
-
-function gamestart() {
-cpudeck[Math.floor(Math.random()*cpudeck.length)];
-document.getElementById("cpudeck").src = ("assets/images/cpudeck");
-    
+function gamestart()  {
+Math.floor(Math.random(cpudeck) * 5);
+document.getElementById("cpudeck").innerHTML = "cpudeck";
 }
 
+
+ 
