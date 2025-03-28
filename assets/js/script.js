@@ -35,15 +35,17 @@ function gamestart()  {
 document.getElementById("cpudeck").onclick = function() {gamestart()};
 Math.floor(Math.random(cpudeck) * 5);
 document.getElementById("cpudeck").src = "assets/images/cpudeck/2_of_spades.png";
+document.getElementById("cardnoise1").play("cardnoise1");
 }
 
 
 //New Code
-let cardnoise
 
-function  cardnoise () {
-document.getElementById("cardnoise1").onclick = function() {cardnoise()};
-document.getElementById("cardnoise1").play(cardnoise.wav);
-}
+//function  cardnoise () {
+
+//cardnoise (); 
+//document.getElementById("cardnoise1").onclick = function() {cardnoise()};
+//document.getElementById("cardnoise1").play("assets/sounds/cardnoise.wav");
+//}
 //document.getElementById("cpudeck").innerHTML = "4_of_clubs.png";
  
