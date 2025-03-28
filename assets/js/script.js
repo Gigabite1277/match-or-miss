@@ -33,7 +33,7 @@ cpudeck =  ["assets/images/cpudeck/2_of_hearts.png", "assets/images/cpudeck/2_of
 function gamestart()  {
   
 document.getElementById("cpudeck").onclick = function() {gamestart()};
-Math.floor(Math.random(cpudeck) * 5);
+cpudeck = Math.floor(Math.random(cpudeck) *5 );
 document.getElementById("cpudeck").src = "assets/images/cpudeck/2_of_spades.png";
 document.getElementById("cardnoise1").play("cardnoise1");
 }
