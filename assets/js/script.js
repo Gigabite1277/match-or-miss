@@ -24,21 +24,54 @@ document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/
 
 document.getElementById("militarydrums").play();
 
-//card play sound
 
-
-let cpudeck
-
-
-
-function gamestart()  {
-cpudeck = Array ["2_of_hearts.png","2_of_spades.png","3_of_diamonds.png","4_of_clubs.png","4_of_diamonds.png" ]  
-
-cpudeck = Math.floor(Math.random() *5);
-document.getElementById("cpudeck").src = cpudeck.length;
-document.getElementById("cpudeck").onclick = function() {gamestart};
+//card play sound (1st properly built and tested function)
+function  buttonpress ()
+{
+document.getElementById("cardnoise1").onclick = function() {buttonpress};
 document.getElementById("cardnoise1").play("cardnoise.wav");
 }
+
+
+
+
+function  cpudeckchange ()
+{
+cpudeck =  ["2_of_hearts.png","2_of_spades.png","3_of_diamonds.png","4_of_clubs.png","4_of_diamonds.png" ]
+
+document.getElementById("cpudeck").onclick = function() {cpudeckchange};
+//Math.floor(Math.random() *5.);
+document.getElementById("cpudeck").innerHTML = "assets/images/cpudeck/2_of_clubs.png";
+//document.getElementById("cpudeck").src = "assets/images/cpudeck/2_of_clubs.png";
+document.getElementById("cpudeck").play("cardnoise.wav");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//let cpudeck
+
+//function gamestart()  {
+//cpudeck = Array ["2_of_hearts.png","2_of_spades.png","3_of_diamonds.png","4_of_clubs.png","4_of_diamonds.//png" ]  
+
+//cpudeck = Math.floor(Math.random() *5);
+//document.getElementById("cpudeck").src = cpudeck.length;
+//document.getElementById("cpudeck").onclick = function() {};
+//document.getElementById("cardnoise1").play("cardnoise.wav");
+//}
 
 //function cardplay()
 
