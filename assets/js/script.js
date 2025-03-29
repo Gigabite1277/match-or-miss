@@ -19,6 +19,7 @@ var c = setInterval(showclock,1000)
 }
 
 //HUD background image
+
 document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/wtbuilding650.png)";
 
 document.getElementById("militarydrums").play();
@@ -28,24 +29,23 @@ document.getElementById("militarydrums").play();
 
 let cpudeck
 
-cpudeck =  ["assets/images/cpudeck/2_of_hearts.png", "assets/images/cpudeck/2_of_spades.png","assets/images/cpudeck/3_of_diamonds.png","assets/images/cpudeck/4_of_clubs.png","assets/images/cpudeck/4_of_diamonds.png" ]
+
 
 function gamestart()  {
-  
-document.getElementById("cpudeck").onclick = function() {gamestart()};
-cpudeck = Math.floor(Math.random(cpudeck) *5 );
-document.getElementById("cpudeck").src = "assets/images/cpudeck/2_of_spades.png";
-document.getElementById("cardnoise1").play("cardnoise1");
+cpudeck = Array ["2_of_hearts.png","2_of_spades.png","3_of_diamonds.png","4_of_clubs.png","4_of_diamonds.png" ]  
+
+cpudeck = Math.floor(Math.random() *5);
+document.getElementById("cpudeck").src = cpudeck.length;
+document.getElementById("cpudeck").onclick = function() {gamestart};
+document.getElementById("cardnoise1").play("cardnoise.wav");
 }
 
+//function cardplay()
 
-//New Code
-
-//function  cardnoise () {
-
-//cardnoise (); 
-//document.getElementById("cardnoise1").onclick = function() {cardnoise()};
-//document.getElementById("cardnoise1").play("assets/sounds/cardnoise.wav");
+//{
+//cpudeck = ["2_of_hearts.png","2_of_spades.png","3_of_diamonds.png","4_of_clubs.png","4_of_diamonds.png" ]  
+//document.getElementById("cpudeck").onclick = function() {cardplay};
+//document.getElementById("cpudeck").innerHTML = cpudeck [3];
+//document.getElementById("cardnoise1").play("cardnoise.wav");
 //}
-//document.getElementById("cpudeck").innerHTML = "4_of_clubs.png";
- 
+
