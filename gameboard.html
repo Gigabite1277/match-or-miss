@@ -30,7 +30,7 @@
 
     <div class="content">
 <!--This is the code for the CPU window hold that displays the Enemy Intel Data-->
-<div id="cpuwindow">Enemy Data:<br><img id="cpudeck" src="assets/images/nodata100.png">
+<div id="cpuwindow">Enemy Data:<br><img onclick= cpudeckchange() id="cpudeck"  src="assets/images/nodata100.png">
       <div Remaining Targets:></div>
       <div id="enemiesleft">20</div>
      </div>
@@ -57,7 +57,7 @@
      <div id="p1window">Player 1<br> <img id="p1deck" src="assets/images/p1deck/2_of_diamonds.png">
       <img id="p1deck" src="assets/images/p1deck/4_of_clubs.png">
       <img id="p1deck" src="assets/images/p1deck/6_of_hearts.png"><br>
-        <button id="1stplay" type="button" onclick= buttonpress()>PLAY!</button>
+        <button id="1stplay" type="button" onclick= buttonpress() >PLAY!</button>
       <button type="button">ASSIST!</button>
       <div>Health:</div><div id="health">20</div>
       
