@@ -1,3 +1,6 @@
+
+
+
 var c = setInterval(showclock,1000)
  function showclock(){
  var seconds = document.getElementById("countdown").textContent;
@@ -26,6 +29,26 @@ document.getElementById("militarydrums").play();
 
 
 
+
+var x = document.getElementById("cardnoise1"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+
+
+
+
+
+
+document.getElementById("cpudeck").onclick = function() {cpuplay()};
+//imagearray = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"]
+//Math.floor(Math.random() *5);
+//document.getElementById("cpudeck").src = imagearray[randomNum];
+function cpuplay(){
+document.getElementById("cpudeck").innerHTML = "assets/images/4_of_spades.png";
+}
 
 
 
