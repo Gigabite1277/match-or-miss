@@ -41,16 +41,18 @@ function playAudio() {
 
 
 
+function cpuplay()
 
+{
+
+const imagearray = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"]
 document.getElementById("cpudeck").onclick = function() {cpuplay()};
-//imagearray = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"]
-//Math.floor(Math.random() *5);
-//document.getElementById("cpudeck").src = imagearray[randomNum];
-function cpuplay(){
-document.getElementById("cpudeck").innerHTML = "assets/images/4_of_spades.png";
+document.getElementById("cpudeck").src = "2_of_hearts.png";
 }
-
-
+//Math.floor(Math.random() *5);
+//document.getElementById("cpudeck").src = "assets/images/carddeck/3_of_spades.png";
+ //imagearray = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"]
+ document.getElementById("cpudeck").innerHTML = "4_of_spades.png";
 
 
 
