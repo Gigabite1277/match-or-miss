@@ -4,7 +4,7 @@
 var c = setInterval(showclock,1000)
  function showclock(){
  var seconds = document.getElementById("countdown").textContent;
-   seconds--;
+  seconds--;
  document.getElementById("countdown").innerHTML=seconds;
    if(seconds==0)
      {
@@ -18,7 +18,7 @@ var c = setInterval(showclock,1000)
  
  function timer() {
   document.getElementById("countdown").innerHTML = "";
-  //document.getElementById("hudwindow").innerHTML = wtbuilding650.png;
+  
 }
 
 //HUD background image
@@ -30,11 +30,13 @@ document.getElementById("militarydrums").play();
 
 
 
-var x = document.getElementById("cardnoise1"); 
+
 
 function playAudio() { 
+  var x = document.getElementById("cardnoise1"); 
   x.play(); 
 } 
+
 
 
 
@@ -45,14 +47,17 @@ function cpuplay()
 
 {
 
-const imagearray = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"]
-document.getElementById("cpudeck").onclick = function() {cpuplay()};
-document.getElementById("cpudeck").src = "2_of_hearts.png";
+document.getElementById("cpudeck").onclick = function() {cpuplay()};  
+//var imageArray = ["images/carddeck/2_of_clubs.png","carddeck/2_of_diamonds.png","images/carddeck/2_of_hearts.png","images/carddeck/2_of_spades.png"];
+//var randomPic = Math.floor(Math.random() *imageArray.length);
+//document.getElementById("cpudeck").src = imageArray[randomPic];
+//document.getElementById("cpudeck").innerHTML = imageArray[randomPic];
+ document.getElementById("cpudeck").innerHTML = "assets/images/carddeck/2_of_diamonds.png";
 }
-//Math.floor(Math.random() *5);
+//const randompic = Math.floor(Math.random() *5);
 //document.getElementById("cpudeck").src = "assets/images/carddeck/3_of_spades.png";
  //imagearray = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"]
- document.getElementById("cpudeck").innerHTML = "4_of_spades.png";
+ //document.getElementById("cpudeck").innerHTML = 4_of_spades.png;
 
 
 
