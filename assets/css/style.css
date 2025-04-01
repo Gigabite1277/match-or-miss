@@ -19,7 +19,7 @@
   
 }
 
-.cpuwindow { grid-area: cpu;
+#cpuwindow { grid-area: cpu;
   
 
 }
