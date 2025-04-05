@@ -1,4 +1,4 @@
-# Match or Miss
+# ![Match or Miss - The patern Matching Game](https://github.com/Gigabite1277/mix-and-match/assets/images/mombanner700.png)
 
 ## Strategy
 ## Project Goals
