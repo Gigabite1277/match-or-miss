@@ -25,22 +25,26 @@ var c = setInterval(showclock,1000)
 
 document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/wtbuilding650.png)";
 
+
+
 document.getElementById("militarydrums").play();
 
-
+//code to play cardnoise Sound fx when cpu PLAY button is pressed
+document.getElementById("cpubutton").onclick = function() {playAudio()};
 function playAudio() { 
-  document.getElementById("cardnoise1").play(); 
+document.getElementById("cardnoise1").play(); 
 } 
 
-
+//Code to randomly display cpu card
+document.getElementById("cpubutton").onclick = function() {cpuplay()};
 function cpuplay() {
 deck1 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
 random = Math.floor(Math.random(deck1) *deck1.length);
 document.getElementById("cpudeck1").src = deck1[random];
-//document.getElementById("cpudeck1").innerHTML = "assets/images/carddeck/2_of_hearts.png");
+//document.getElementById("cpudeck1").innerHTML = deck1[random];
 }
 
-//cpuplay();
+
 
 
 
