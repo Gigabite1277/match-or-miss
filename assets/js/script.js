@@ -29,22 +29,18 @@ document.getElementById("militarydrums").play();
 
 
 function playAudio() { 
-  var x = document.getElementById("cardnoise1"); 
-  x.play(); 
+  document.getElementById("cardnoise1").play(); 
 } 
 
 
-
-
-function p1button()
-{
-  document.getElementById("cpudeck1").onclick = function(){cpuplay()};  
+function cpuplay() {
+deck1 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
+random = Math.floor(Math.random(deck1) *deck1.length);
+document.getElementById("cpudeck1").src = deck1[random];
+//document.getElementById("cpudeck1").innerHTML = "assets/images/carddeck/2_of_hearts.png");
 }
 
-
-
-function cpuplay()
-{
+//cpuplay();
 
 
 
@@ -55,14 +51,36 @@ function cpuplay()
 
 
 
-  //var imageArray = ["2_of_clubs.png","carddeck/2_of_diamonds.png","2_of_hearts.png","2_of_spadesrandomPic = cpudeck = Math.floor(Math.random() *imageArray.length);]
+
+
+
+
+
+
+
+
+
+
+
+//var chosenDrink = Math.floor(Math.random(drinkOptions) *drinkOptions.length);
+//var message = `Enjoy your ${chosenMeal} and ${chosenDrink}!`;
+//log the message
+//console.log(message);
+//deck1 = Math.floor(Math.random(deck1) *deck1.length);
+//document.getElementById("cpudeck1").src = "assets/images/2_of_diamonds.png";
+//var cpudeck1 = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"];
+//random = Math.floor(Math.random(cpudeck1) *cpudeck1.length);
+//p1deck1 = Math.floor(Math.random(p1deck1) *p1deck1.length);
+//document.getElementById("cpudeck1").innerHTML = "assets/images/carddeck/4_of_spades.png";
+//document.getElementById("cpudeck1").innerHTML = (cpudeck1[random]);
+//log the message
+//var imageArray = ["2_of_clubs.png","carddeck/2_of_diamonds.png","2_of_hearts.png","2_of_spadesrandomPic = cpudeck = Math.floor(Math.random() *imageArray.length);]
 //document.getElementById("cpudeck1").src = "assets/images/carddeck/2_of_diamonds.png";
 //document.getElementById("cpudeck").innerHTML = imageArray[randomPic];
-  //document.getElementById("cpudeck").innerHTML = "images/carddeck/2_of_diamonds.png";
-}
+//document.getElementById("cpudeck").innerHTML = "images/carddeck/2_of_diamonds.png";
 //const randompic = Math.floor(Math.random() *5)/document.getElementById("cpudeck").src = "assets/images/carddeck/3_of_spades.png";
- //imagearray = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"]
-//document.getElementById("cpudeck1").innerHTML = "assets/images/carddeck/2_of_diamonds.png";
+//imagearray = ["2_of_diamonds.png","2_of_hearts.png","4_of_spades","5_of_Clubs"]
+//
 //}
 
 

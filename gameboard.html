@@ -29,11 +29,12 @@
 <!--This is the code for the central grid area that holds the CPU, HUD and Player1 windows-->
 
     <div class="content">
-<!--This is the code for the CPU window hold that displays the Enemy Intel Data-->
-<div id="cpuwindow">Enemy Data:<br><img id="cpudeck1" onclick="cpuplay()" src="assets/images/nodata100.png" width="68" height="100" alt="The No Data Card"><br>
+<!--This is the code for the CPU window  that displays the Enemy Intel Data-->
+<div id="cpuwindow">Enemy Data:<br>
+  <img src="assets/images/nodata100.png" id="cpudeck1"  width="68" height="100" alt="The No Data Card"><br>
       <div Remaining Targets:></div>
       <div id="enemiesleft">20</div>
-      <button id="button"  onclick="playAudio()" onclick="cpuplay()" type="button">PLAY</button>
+      <button id="cpubutton"  onclick="playAudio()" onclick="cpuplay()" type="button">PLAY</button>
      </div>
     
     
@@ -55,9 +56,9 @@
       
     </div>
      <!--This is the code for the Player 1 window hold the three cards-->
-     <div id="p1window">Player 1<br> <img id="cpudeck2" src="assets/images/carddeck/2_of_diamonds.png">
-      <img id="cpudeck3" src="assets/images/carddeck/4_of_clubs.png">
-      <img id="cpudeck4" src="assets/images/5_of_clubs.png"><br>
+     <div id="p1window">Player 1<br> <img id="p1deck1" src="assets/images/carddeck/2_of_diamonds.png">
+      <img id="p1deck2" src="assets/images/carddeck/4_of_clubs.png">
+      <img id="p1deck3" src="assets/images/5_of_clubs.png"><br>
      
       <div>Health:</div><div id="health">20</div><br><button type="button">ASSIST!</button><br><button type="p1button">PLAY</button>
       
