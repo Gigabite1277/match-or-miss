@@ -28,17 +28,22 @@ document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/
 //Military drums- Background soundtrack.
 document.getElementById("militarydrums").play();
 
-//Code to play cardnoise.mp3 Sound fx when cpu PLAY button is pressed
-document.getElementById("cpubutton").onclick = function() {cardnoise()};
+//Event listener to play cardnoise.mp3 Sound fx when cpu PLAY button is pressed
+let cardNoise = document.getElementById("cpubutton");
+cardNoise.addEventListener("click", cardnoise);
 
-
-function cardnoise (){
-  document.getElementById("cardnoise1").play();
+//Function to play cardnoise sound effect when PLAY button is clicked
+function cardnoise() {
+document.getElementById("cardnoise1").play();
 }
+
+
 
 //Code to randomly display cpu card
 
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
+
+
 
 
 function cpuplay() {
@@ -59,10 +64,7 @@ document.getElementById("p1deck3").src = deck3[random3];
 
 
 
-function changeback () {
-  document.getElementById("cpudeck1").src = assets/images/nodata100.png;
- }
- 
+
 
 
 
