@@ -25,26 +25,22 @@ var c = setInterval(showclock,1000)
 
 document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/wtbuilding650.png)";
 
-//Military drums- Background soundtrack.
+//Military drums - Background soundtrack.
 document.getElementById("militarydrums").play();
 
-//Event listener to play cardnoise.mp3 Sound fx when cpu PLAY button is pressed
+//Event listener: to play cardnoise.mp3 Sound fx when cpu PLAY button is pressed
 let cardNoise = document.getElementById("cpubutton");
 cardNoise.addEventListener("click", cardnoise);
 
-//Function to play cardnoise sound effect when PLAY button is clicked
+//Function: to play cardnoise sound effect when PLAY button is clicked
 function cardnoise() {
 document.getElementById("cardnoise1").play();
 }
 
 
-
-//Code to randomly display cpu card
+//Code to randomly display 1 cpu data card and three Player 1 decks
 
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
-
-
-
 
 function cpuplay() {
 deck = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
@@ -55,12 +51,33 @@ random = Math.floor(Math.random(deck) *deck.length);
 random1 = Math.floor(Math.random(deck1) *deck1.length);
 random2 = Math.floor(Math.random(deck2) *deck2.length);
 random3 = Math.floor(Math.random(deck3) *deck3.length);
-document.getElementById("cpudeck1").src = deck1[random];
+document.getElementById("cpudeck1").src = deck[random];
 document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
 }
+// Code used to compare cpu deck to the Player 1 deck
+//let deck = document.getElementById("deck");
+//cardCheck.addEventListener("click", cardCheck);
 
+//let deck1 = document.getElementById("deck1");
+//cardCheck.addEventListener("click", cardCheck);
+
+//let deck2 = document.getElementById("deck2");
+//cardCheck.addEventListener("click", cardCheck);
+
+//let deck3 = document.getElementById("deck3");
+//cardCheck.addEventListener("click", cardCheck);
+
+  //if (deck === deck1) 
+      //getElementById("p1window").innerHTML = ("Well done! all targets eleiminated");
+  //if (deck === deck2) 
+        //getElementById("p1window").innerHTML = ("Well done! all targets eleiminated");
+  //if (deck === deck3) {
+          //getElementById("p1window").innerHTML = ("Well done! all targets eleiminated");
+ //} else {
+     //getElementById("p1window").innerHTML = ("You IDIOT! You got everyone kiled");
+  //}
 
 
 
