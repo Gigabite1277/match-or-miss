@@ -56,6 +56,43 @@ document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
 }
+
+document.getElementById("deck1").onclick = function() {cardCheck};
+
+
+function cardCheck() {
+  document.getElementById("p1window").innerHTML = "Well done!";
+
+ 
+}
+    
+
+
+
+
+
+//Code used to compare cpu deck to the Player 1 deck
+//let deck1 = document.getElementById("deck1");
+//  .addEventListener("click", cardCheck);
+
+
+
+
+//let pl = document.getElementById("p1deck2");
+//cardClick2.addEventListener("click", cardCheck);
+
+//let cardClick3 = document.getElementById("p1deck3");
+//cardClick3.addEventListener("click", cardCheck);
+
+
+
+
+
+
+
+
+
+
 // Code used to compare cpu deck to the Player 1 deck
 //let deck = document.getElementById("deck");
 //cardCheck.addEventListener("click", cardCheck);
@@ -68,8 +105,8 @@ document.getElementById("p1deck3").src = deck3[random3];
 
 //let deck3 = document.getElementById("deck3");
 //cardCheck.addEventListener("click", cardCheck);
-
-  //if (deck === deck1) 
+ //function cardCheck()
+  //if (deck === deck1) {
       //getElementById("p1window").innerHTML = ("Well done! all targets eleiminated");
   //if (deck === deck2) 
         //getElementById("p1window").innerHTML = ("Well done! all targets eleiminated");
