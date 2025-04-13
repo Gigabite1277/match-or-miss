@@ -58,16 +58,28 @@ document.getElementById("cpudeck1").src = deck[random];
 document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
+//This code shows the card for 1 second before being hidden although data should  be available to the CPU
+setInterval(cardHidden, 700);
+function cardHidden (){
+document.getElementById("cpudeck1").style.visibility = "hidden";
+}
+
+//cpuplay()
+//document.getElementById("cpubutton").onclick = function() {cpuplay()};
+
+
+
+
 
 
 //document.getElementById("deck1").onclick = function() {cardCheck};
 
-setInterval(cardHidden, 3000);
 
-cardHidden ()
-cardHide = document.getElementById("cpudeck1").style.visibility = "visable";
-cardHide = document.getElementById("cpudeck1").style.visibility = "hidden";
 
+//setInterval(cardHidden, 500);
+//cardHidden (cardHide)
+//cardHide = document.getElementById("cpudeck1").style.visibility = "visable";
+//cardHide = document.getElementById("cpudeck1").style.visibility = "hidden";
 }
 
 
