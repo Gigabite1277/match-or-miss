@@ -60,12 +60,12 @@ document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
 
 
-document.getElementById("deck1").onclick = function() {cardCheck};
+//document.getElementById("deck1").onclick = function() {cardCheck};
 
+setInterval(cardHidden, 3000);
 
-const cardHide = setInterval(cardHidden, 3000);
-
-cardHidden(cardHide)
+cardHidden ()
+cardHide = document.getElementById("cpudeck1").style.visibility = "visable";
 cardHide = document.getElementById("cpudeck1").style.visibility = "hidden";
 
 }
