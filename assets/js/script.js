@@ -58,11 +58,93 @@ document.getElementById("cpudeck1").src = deck[random];
 document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
-//This code shows the card for 1 second before being hidden although data should  be available to the CPU
+//This code shows the card for 1 second before being hidden although data should be available to the CPU to run a comparison with the other P1 deck
 setInterval(cardHidden, 700);
 function cardHidden (){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
+
+
+document.getElementById("p1deck1").onclick = function() {cardCheck()};
+//document.getElementById("p1deck2").onclick = function() {cardCheck()};
+//document.getElementById("p1deck3").onclick = function() {cardCheck()};
+
+function cardCheck(cpudeck1, p1deck1, p1deck2, p1deck3){
+
+  if (cpudeck1 === p1deck1){
+    document.getElementById("p1window").innerHTML = "Well Done! Targets Destroyed";
+} else {
+    document.getElementById("p1window").innerHTML = "You Missed!";
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//document.getElementById("p1deck1");
+//cardClick.addEventListener("click", cardCheck);
+
+
+//cardCheck ()
+
+
+
+
+
+
+
+
+
 
 //cpuplay()
 //document.getElementById("cpubutton").onclick = function() {cpuplay()};
@@ -80,7 +162,7 @@ document.getElementById("cpudeck1").style.visibility = "hidden";
 //cardHidden (cardHide)
 //cardHide = document.getElementById("cpudeck1").style.visibility = "visable";
 //cardHide = document.getElementById("cpudeck1").style.visibility = "hidden";
-}
+
 
 
 
