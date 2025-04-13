@@ -38,6 +38,9 @@ document.getElementById("cardnoise1").play();
 }
 
 
+//const holdPlay = setTimeout(cpuplay, 5000);
+
+
 //Code to randomly display 1 cpu data card and three Player 1 decks
 
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
@@ -55,19 +58,35 @@ document.getElementById("cpudeck1").src = deck[random];
 document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
-}
+
 
 document.getElementById("deck1").onclick = function() {cardCheck};
 
 
-function cardCheck() {
-  document.getElementById("p1window").innerHTML = "Well done!";
+const cardHide = setInterval(cardHidden, 3000);
 
- 
+cardHidden(cardHide)
+cardHide = document.getElementById("cpudeck1").style.visibility = "hidden";
+
 }
-    
 
 
+
+//Event listener: to play delay the card being hidden onscreen PLAY button is pressed
+
+
+//let cardBlink = document.getElementById("cpubutton");
+//cardBlink.addEventListener("click", cardHidden);
+
+
+//const cardHide = setInterval(cardHidden, 9000);
+//const cardShow = setInterval(cardHidden, 1000);
+
+//function cardHidden(cardHide){
+//cardShow = document.getElementById("cpudeck1").style.visibility = "visable";
+//cardHide = document.getElementById("cpudeck1").style.visibility = "hidden";
+
+//}
 
 
 
