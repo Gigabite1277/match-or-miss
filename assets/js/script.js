@@ -42,8 +42,12 @@ document.getElementById("cardnoise1").play();
 
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
-function cpuplay() {
+function cpuplay(random, random1, random2, random3) {
 
+let result 
+let result1 
+let result2
+let result3
 
 deck = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
 deck1 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
@@ -60,7 +64,7 @@ document.getElementById("p1deck3").src = deck3[random3];
 //This code shows the card for 1 second before being hidden although data should be available to the CPU to run a comparison with the other P1 deck
 
 setInterval(cardHidden, 700);
-function cardHidden (){
+function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
 
@@ -69,37 +73,28 @@ document.getElementById("p1deck1").onclick = function() {cardCheck()};
 document.getElementById("p1deck2").onclick = function() {cardCheck()};
 document.getElementById("p1deck3").onclick = function() {cardCheck()};
 
-
-
-
 function cardCheck(random, random1){
-  let result = random
-  let result1 = random1
 
-    if (result === result1){
-    document.getElementById("p1window").innerHTML = "Well Done! P1 TESTED";
+    if (random === random1 ){
+    document.getElementById("p1window").innerHTML = "Well Done! Deck 1 TESTED";
 } else {
   document.getElementById("p1window").innerHTML = "YOU MISSED";
 }
 
 function cardCheck(random, random2){
 
-  let result2 = random2
-
-    if (result === result2){
-    document.getElementById("p1window").innerHTML = "Well Done! P2 TESTED";
+  if (random === random2 ){
+  document.getElementById("p1window").innerHTML = "Well Done! Deck 2 TESTED";
 } else {
-  document.getElementById("p1window").innerHTML = "YOU MISSED";
+document.getElementById("p1window").innerHTML = "YOU MISSED";
 }
 
 function cardCheck(random, random3){
 
-  let result3 = random3 
-
-    if (result === result3){
-    document.getElementById("p1window").innerHTML = "Well Done! P2 TESTED";
+  if (random === random3 ){
+  document.getElementById("p1window").innerHTML = "Well Done! Deck 3 TESTED";
 } else {
-  document.getElementById("p1window").innerHTML = "YOU MISSED";
+document.getElementById("p1window").innerHTML = "YOU MISSED";
 }
 }
 }
