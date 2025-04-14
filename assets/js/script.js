@@ -66,10 +66,9 @@ function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
 
-
 document.getElementById("p1deck1").onclick = function() {cardCheck1()};
 document.getElementById("p1deck2").onclick = function() {cardCheck2()};
-//document.getElementById("p1deck3").onclick = function() {cardCheck3()};
+document.getElementById("p1deck3").onclick = function() {cardCheck3()};
 
 
 /**
@@ -80,31 +79,55 @@ document.getElementById("p1deck2").onclick = function() {cardCheck2()};
 
 
 function cardCheck1() {
+var random;
+var random1;
+
+random = parseInt(document.getElementById("cpudeck1").value);
+random1 = parseInt(document.getElementById("p1deck1").value);
+  
+if (cpudeck1 === p1deck1){
+    document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
+    document.getElementById("cardnoise1").play();
+} else {
+  document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
+}
+} 
+function cardCheck2() {
+var random;
+var random2;
+
+random = parseInt(document.getElementById("cpudeck1").value);
+random2 = parseInt(document.getElementById("p1deck2").value);
+if (cpudeck1 === p1deck2){
+    document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
+    document.getElementById("cardnoise1").play();
+} else {
+  document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
+}
+}
+function cardCheck3() {
+  var random;
+  var random3;
+  
+  random = parseInt(document.getElementById("cpudeck1").value);
+  random3 = parseInt(document.getElementById("p1deck3").value);
+  if (cpudeck1 === p1deck3){
+      document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
+      document.getElementById("cardnoise1").play();
+  } else {
+    document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
+  }
+  }
+}
+
+
+
+
+
+
+
 
 //parseInt(document.getElementById("cpudeck1").value);
 //parseInt(document.getElementById("p1deck1").value);
 //let p1deck1 = random === random1;
 //let cpudeck1 = random === random1;
-var random = (document.getElementById("cpudeck1").value);
-var random1 = (document.getElementById("p1deck1").value);
-  
-if (random === random1){
-    document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
-    document.getElementById("cardnoise1").play();
-} else {
-  document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
-}
-
-function cardCheck2() {
-var random = (document.getElementById("cpudeck1").value);
-var random2 =(document.getElementById("p1deck2").value);
-  
-if (random === random2){
-    document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
-    document.getElementById("cardnoise1").play();
-} else {
-  document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
-}
-}
-}
-}
