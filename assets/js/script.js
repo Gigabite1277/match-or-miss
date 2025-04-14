@@ -43,6 +43,8 @@ document.getElementById("cardnoise1").play();
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
 function cpuplay() {
+
+
 deck = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
 deck1 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
 deck2 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
@@ -64,15 +66,42 @@ document.getElementById("cpudeck1").style.visibility = "hidden";
 
 
 document.getElementById("p1deck1").onclick = function() {cardCheck()};
-//document.getElementById("p1deck2").onclick = function() {cardCheck()};
-//document.getElementById("p1deck3").onclick = function() {cardCheck()};
+document.getElementById("p1deck2").onclick = function() {cardCheck()};
+document.getElementById("p1deck3").onclick = function() {cardCheck()};
 
-function cardCheck(cpudeck1, p1deck1){
 
-  if (cpudeck1 === p1deck1) {
+
+
+function cardCheck(random, random1){
+  let result = random
+  let result1 = random1
+
+    if (result === result1){
     document.getElementById("p1window").innerHTML = "Well Done! P1 TESTED";
 } else {
   document.getElementById("p1window").innerHTML = "YOU MISSED";
+}
+
+function cardCheck(random, random2){
+
+  let result2 = random2
+
+    if (result === result2){
+    document.getElementById("p1window").innerHTML = "Well Done! P2 TESTED";
+} else {
+  document.getElementById("p1window").innerHTML = "YOU MISSED";
+}
+
+function cardCheck(random, random3){
+
+  let result3 = random3 
+
+    if (result === result3){
+    document.getElementById("p1window").innerHTML = "Well Done! P2 TESTED";
+} else {
+  document.getElementById("p1window").innerHTML = "YOU MISSED";
+}
+}
 }
 }
 }
