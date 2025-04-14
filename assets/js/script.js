@@ -43,16 +43,14 @@ document.getElementById("cardnoise1").play();
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
 function cpuplay(random, random1, random2, random3) {
-
-let result 
-let result1 
-let result2
-let result3
-
-deck = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
-deck1 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
-deck2 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
-deck3 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
+//deck = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
+//deck1 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
+//deck2 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
+//deck3 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
+deck = ["assets/images/1.png","assets/images/2.png","assets/images/3.png","assets/images/4.png"];
+deck1 = ["assets/images/1.png","assets/images/2.png","assets/images/3.png","assets/images/4.png"];
+deck2 = ["assets/images/1.png","assets/images/2.png","assets/images/3.png","assets/images/4.png"];
+deck3 = ["assets/images/1.png","assets/images/2.png","assets/images/3.png","assets/images/4.png"];
 random = Math.floor(Math.random(deck) *deck.length);
 random1 = Math.floor(Math.random(deck1) *deck1.length);
 random2 = Math.floor(Math.random(deck2) *deck2.length);
@@ -69,33 +67,43 @@ document.getElementById("cpudeck1").style.visibility = "hidden";
 }
 
 
-document.getElementById("p1deck1").onclick = function() {cardCheck()};
-document.getElementById("p1deck2").onclick = function() {cardCheck()};
-document.getElementById("p1deck3").onclick = function() {cardCheck()};
+document.getElementById("p1deck1").onclick = function() {cardCheck1()};
+document.getElementById("p1deck2").onclick = function() {cardCheck2()};
+//document.getElementById("p1deck3").onclick = function() {cardCheck3()};
 
-function cardCheck(random, random1){
 
-    if (random === random1 ){
-    document.getElementById("p1window").innerHTML = "Well Done! Deck 1 TESTED";
+/**
+ * Checks the answer agaist the first element in
+ * the returned calculateCorrectAnswer array
+ */
+
+
+
+function cardCheck1() {
+
+//parseInt(document.getElementById("cpudeck1").value);
+//parseInt(document.getElementById("p1deck1").value);
+//let p1deck1 = random === random1;
+//let cpudeck1 = random === random1;
+var random = (document.getElementById("cpudeck1").value);
+var random1 = (document.getElementById("p1deck1").value);
+  
+if (random === random1){
+    document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
+    document.getElementById("cardnoise1").play();
 } else {
-  document.getElementById("p1window").innerHTML = "YOU MISSED";
+  document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
 }
 
-function cardCheck(random, random2){
-
-  if (random === random2 ){
-  document.getElementById("p1window").innerHTML = "Well Done! Deck 2 TESTED";
+function cardCheck2() {
+var random = (document.getElementById("cpudeck1").value);
+var random2 =(document.getElementById("p1deck2").value);
+  
+if (random === random2){
+    document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
+    document.getElementById("cardnoise1").play();
 } else {
-document.getElementById("p1window").innerHTML = "YOU MISSED";
-}
-
-function cardCheck(random, random3){
-
-  if (random === random3 ){
-  document.getElementById("p1window").innerHTML = "Well Done! Deck 3 TESTED";
-} else {
-document.getElementById("p1window").innerHTML = "YOU MISSED";
-}
+  document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
 }
 }
 }
