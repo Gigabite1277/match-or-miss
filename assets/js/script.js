@@ -66,26 +66,27 @@ function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
 
+
+
+
+
+/**
+ * Onclick commands for the
+ * the returned calculateCorrectAnswer array
+ */
 document.getElementById("p1deck1").onclick = function() {cardCheck1()};
 document.getElementById("p1deck2").onclick = function() {cardCheck2()};
 document.getElementById("p1deck3").onclick = function() {cardCheck3()};
 
-
-/**
- * Checks the answer agaist the first element in
- * the returned calculateCorrectAnswer array
- */
-
-
-
 function cardCheck1() {
 var cpudeck1
 var p1deck1
-
-random = parseInt(document.getElementById("cpudeck1").value);
-random1 = parseInt(document.getElementById("p1deck1").value);
+var random
+var random1
+random = document.getElementById("cpudeck1").value;
+random1 = document.getElementById("p1deck1").value;
   
-if (cpudeck1 === p1deck1){
+if (cpudeck1 == p1deck1){
     document.getElementById("p1window").innerHTML = "DECK 1 ELIMINATED!!!";
     document.getElementById("cardnoise1").play();
 } else {
@@ -96,8 +97,8 @@ function cardCheck2() {
 var cpudeck1
 var p1deck2
 
-random = parseInt(document.getElementById("cpudeck1").innerText);
-random2 = parseInt(document.getElementById("p1deck2").innerText);
+random = parseInt(document.getElementById("cpudeck1").innerHTML);
+random2 = parseInt(document.getElementById("p1deck2").innerHTML);
 if (cpudeck1 === p1deck2){
     document.getElementById("p1window").innerHTML = "DECK 2 ELIMINATED!!!";
     document.getElementById("cardnoise1").play();
@@ -109,8 +110,8 @@ function cardCheck3() {
   var cpudeck1//CHANGED VARIABLES TO CPUDECK1 AND P1DECK1
   var p1deck3
   
-  random = parseInt(document.getElementById("cpudeck1").innerText);
-  random3 = parseInt(document.getElementById("p1deck3").innerText);
+  random = parseInt(document.getElementById("cpudeck1").innerHTML);
+  random3 = parseInt(document.getElementById("p1deck3").innerHTML);
   if (cpudeck1 === p1deck3){
       document.getElementById("p1window").innerHTML = "DECK 3 ELIMINATED!!!";
       document.getElementById("cardnoise1").play();
