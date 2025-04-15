@@ -79,40 +79,40 @@ document.getElementById("p1deck3").onclick = function() {cardCheck3()};
 
 
 function cardCheck1() {
-var random;
-var random1;
+var cpudeck1
+var p1deck1
 
 random = parseInt(document.getElementById("cpudeck1").value);
 random1 = parseInt(document.getElementById("p1deck1").value);
   
 if (cpudeck1 === p1deck1){
-    document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
+    document.getElementById("p1window").innerHTML = "DECK 1 ELIMINATED!!!";
     document.getElementById("cardnoise1").play();
 } else {
   document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
 }
 } 
 function cardCheck2() {
-var random;
-var random2;
+var cpudeck1
+var p1deck2
 
-random = parseInt(document.getElementById("cpudeck1").value);
-random2 = parseInt(document.getElementById("p1deck2").value);
+random = parseInt(document.getElementById("cpudeck1").innerText);
+random2 = parseInt(document.getElementById("p1deck2").innerText);
 if (cpudeck1 === p1deck2){
-    document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
+    document.getElementById("p1window").innerHTML = "DECK 2 ELIMINATED!!!";
     document.getElementById("cardnoise1").play();
 } else {
   document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
 }
 }
 function cardCheck3() {
-  var random;
-  var random3;
+  var cpudeck1//CHANGED VARIABLES TO CPUDECK1 AND P1DECK1
+  var p1deck3
   
-  random = parseInt(document.getElementById("cpudeck1").value);
-  random3 = parseInt(document.getElementById("p1deck3").value);
+  random = parseInt(document.getElementById("cpudeck1").innerText);
+  random3 = parseInt(document.getElementById("p1deck3").innerText);
   if (cpudeck1 === p1deck3){
-      document.getElementById("p1window").innerHTML = "TARGET ELIMINATED!!!";
+      document.getElementById("p1window").innerHTML = "DECK 3 ELIMINATED!!!";
       document.getElementById("cardnoise1").play();
   } else {
     document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
