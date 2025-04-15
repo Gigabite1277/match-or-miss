@@ -159,11 +159,7 @@ body {
           }
           
 
-/*#wtbuilding 
-            {
-              object-fit: fill;
-              background-image: url("wtbuilding650.png");
-            }*/
+
 
 
 
@@ -232,12 +228,13 @@ body {
                }
   }
 
-  @media screen and (max-width: 700px) {
-    #hudwindow {          
-                           
-                          
-               }
+  @media screen and (min-width: 1330px) {
+  #hudwindow {
+              object-fit: fill;
+              background-image: url("assets/images/greenhud350.png");
+             }
   }
+
 
 
 
