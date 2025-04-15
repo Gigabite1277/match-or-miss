@@ -57,7 +57,19 @@ document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
 
+function randomValue() {
+  return random  
+  }
 
+function randomValue1() {
+  return random1  
+    }
+    function randomValue2() {
+      return random2  
+        }
+        function randomValue3() {
+          return random3  
+            }
 /**
  *This code shows the card for 1 second before being hidden although data should be available 
  *to the CPU to run a comparison with the other P1 deck
@@ -89,41 +101,43 @@ document.getElementById("p1deck3").onclick = function() {cardCheck3()};
  */
 function cardCheck1(random, random1) {
 
-random = document.getElementById("cpudeck1").innerHTML;
-random1 = document.getElementById("p1deck1").innerHTML;
+random = document.getElementById("cpudeck1").innerHTML = randomValue();
+random1 = document.getElementById("p1deck1").innerHTML = randomValue1();
 
   
-if (cpudeck1 == p1deck1){
-    document.getElementById("p1window").innerHTML = "DECK 1 ELIMINATED!!!";
+if (random === random1){
+    document.getElementById("p1window").innerHTML = "MATCH";
     document.getElementById("cardnoise1").play();
 } else {
-  document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
+  document.getElementById("p1window").innerHTML = "MISS";
 }
 } 
 function cardCheck2(random, random2) {
 
-
-random = parseInt(document.getElementById("cpudeck1").innerHTML);
-random2 = parseInt(document.getElementById("p1deck2").innerHTML);
-if (random === random2){
-    document.getElementById("p1window").innerHTML = "DECK 2 ELIMINATED!!!";
-    document.getElementById("cardnoise1").play();
-} else {
-  document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
-}
-}
-function cardCheck3(random, random3) {
+  random = document.getElementById("cpudeck1").innerHTML = randomValue();
+  random2 = document.getElementById("p1deck2").innerHTML = randomValue2();
   
-  
-  random = parseInt(document.getElementById("cpudeck1").innerHTML);
-  random3 = parseInt(document.getElementById("p1deck3").innerHTML);
-  if (random === random3){
-      document.getElementById("p1window").innerHTML = "DECK 3 ELIMINATED!!!";
+    
+  if (random === random2){
+      document.getElementById("p1window").innerHTML = "MATCH";
       document.getElementById("cardnoise1").play();
   } else {
-    document.getElementById("p1window").innerHTML = "TARGET MISSED!!!";
+    document.getElementById("p1window").innerHTML = "MISS";
   }
-  }
+  } 
+  function cardCheck3(random, random3) {
+
+    random = document.getElementById("cpudeck1").innerHTML = randomValue();
+    random3 = document.getElementById("p1deck3").innerHTML = randomValue3();
+    
+      
+    if (random === random3){
+        document.getElementById("p1window").innerHTML = "MATCH";
+        document.getElementById("cardnoise1").play();
+    } else {
+      document.getElementById("p1window").innerHTML = "MISS";
+    }
+    } 
 }
 
 
