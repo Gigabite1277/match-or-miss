@@ -44,10 +44,10 @@ document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
 function cpuplay(random, random1, random2, random3) {
 
-deck = ["assets/images/1.png","assets/images/2.png","assets/images/3.png","assets/images/4.png"];
-deck1 = ["assets/images/1.png","assets/images/2.png","assets/images/3.png","assets/images/4.png"];
-deck2 = ["assets/images/1.png","assets/images/2.png","assets/images/3.png","assets/images/4.png"];
-deck3 = ["assets/images/1.png","assets/images/2.png","assets/images/3.png","assets/images/4.png"];
+deck = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
+deck1 = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
+deck2 = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
+deck3 = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
 random = Math.floor(Math.random(deck) *deck.length);
 random1 = Math.floor(Math.random(deck1) *deck1.length);
 random2 = Math.floor(Math.random(deck2) *deck2.length);

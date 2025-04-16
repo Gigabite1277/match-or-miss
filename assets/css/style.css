@@ -67,6 +67,7 @@ body {
   border-radius: 6px;
   border-color: darkgreen;
   width: 15%;
+  height: 400px;
   display: flex;
   align-items: center;
   flex-direction:column;
@@ -88,6 +89,7 @@ body {
   border-radius: 6px;
   border-color: darkgreen;
   width: 15%;
+  height: 400px;
   align-items: center;
   flex-direction:column;
   background-color: black;
