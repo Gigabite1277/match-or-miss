@@ -42,8 +42,13 @@ document.getElementById("cardnoise1").play();
 
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
+
+
+
+
 function cpuplay(random, random1, random2, random3) {
 
+  
 deck = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
 deck1 = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
 deck2 = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
@@ -78,11 +83,6 @@ setInterval(cardHidden, 700);
 function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
-
-
-
-
-
 /**
  * Onclick commands for the
  * the returned calculateCorrectAnswer array.
@@ -90,9 +90,6 @@ document.getElementById("cpudeck1").style.visibility = "hidden";
 document.getElementById("p1deck1").onclick = function() {cardCheck1()};
 document.getElementById("p1deck2").onclick = function() {cardCheck2()};
 document.getElementById("p1deck3").onclick = function() {cardCheck3()};
-
-
-
 /**
  * Code for the ther cardCheck function to check if cpudeck1(random) is the same as 
  * the p1deck1, p1deck2, p1deck3.
@@ -100,11 +97,9 @@ document.getElementById("p1deck3").onclick = function() {cardCheck3()};
  * card from.
  */
 function cardCheck1(random, random1) {
-
 random = document.getElementById("cpudeck1").innerHTML = randomValue();
 random1 = document.getElementById("p1deck1").innerHTML = randomValue1();
 
-  
 if (random === random1){
     document.getElementById("p1window").innerHTML = "MATCH";
     document.getElementById("match-sound").play();
@@ -143,11 +138,13 @@ function cardCheck2(random, random2) {
     }
     } 
 }
-
-
-
-
-
+//Loop intened for the health section
+function myHealth(){
+let myHealth = 20;
+    while (myHealth >= 0) 
+      return (myHealth);
+document.getElementById("health").innerHTML = "MISS";
+}
 
 
 
