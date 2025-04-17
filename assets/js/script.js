@@ -20,7 +20,7 @@ var c = setInterval(showclock,1000)
 
 //HUD background image
 
-document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/greenhud650.png)";
+document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/greenhud350.png)";
 
 //Military drums - Background soundtrack.
 document.getElementById("militarydrums").play();
@@ -107,9 +107,11 @@ random1 = document.getElementById("p1deck1").innerHTML = randomValue1();
   
 if (random === random1){
     document.getElementById("p1window").innerHTML = "MATCH";
-    document.getElementById("cardnoise1").play();
+    document.getElementById("match-sound").play();
 } else {
   document.getElementById("p1window").innerHTML = "MISS";
+  document.getElementById("miss-sound").play();
+ 
 }
 } 
 function cardCheck2(random, random2) {
@@ -120,9 +122,10 @@ function cardCheck2(random, random2) {
     
   if (random === random2){
       document.getElementById("p1window").innerHTML = "MATCH";
-      document.getElementById("cardnoise1").play();
+      document.getElementById("match-sound").play();
   } else {
     document.getElementById("p1window").innerHTML = "MISS";
+    document.getElementById("miss-sound").play();
   }
   } 
   function cardCheck3(random, random3) {
@@ -133,9 +136,10 @@ function cardCheck2(random, random2) {
       
     if (random === random3){
         document.getElementById("p1window").innerHTML = "MATCH";
-        document.getElementById("cardnoise1").play();
+        document.getElementById("match-sound").play();
     } else {
       document.getElementById("p1window").innerHTML = "MISS";
+      document.getElementById("miss-sound").play();
     }
     } 
 }
