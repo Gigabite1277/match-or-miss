@@ -106,6 +106,7 @@ if (random === random1){
 } else {
   document.getElementById("p1window").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
+  document.getElementById("health").innerHTML = "health" - 1;
  
 }
 } 
@@ -121,6 +122,7 @@ function cardCheck2(random, random2) {
   } else {
     document.getElementById("p1window").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
+    document.getElementById("health").innerHTML = "health" - 1;
   }
   } 
   function cardCheck3(random, random3) {
@@ -135,16 +137,17 @@ function cardCheck2(random, random2) {
     } else {
       document.getElementById("p1window").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
-    }
+      document.getElementById("health").innerHTML = healthDeduct();
+          }
     } 
 }
-//Loop intened for the health section
-function myHealth(){
-let myHealth = 20;
-    while (myHealth >= 0) 
-      return (myHealth);
-document.getElementById("health").innerHTML = "MISS";
-}
+
+function healthDeduct(){
+  let health = 20;
+  return health - 1;
+ }
+
+
 
 
 
