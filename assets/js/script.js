@@ -65,8 +65,7 @@ document.getElementById("p1deck3").src = deck3[random3];
 function randomValue() {
   return random  
   }
-
-function randomValue1() {
+ function randomValue1() {
   return random1  
     }
     function randomValue2() {
@@ -104,7 +103,7 @@ if (random === random1){
     document.getElementById("p1window").innerHTML = "MATCH";
     document.getElementById("match-sound").play();
 } else {
-  document.getElementById("p1window").innerHTML = "MISS";
+  //document.getElementById("p1window").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
   document.getElementById("health").innerHTML = "health" - 1;
  
@@ -120,7 +119,7 @@ function cardCheck2(random, random2) {
       document.getElementById("p1window").innerHTML = "MATCH";
       document.getElementById("match-sound").play();
   } else {
-    document.getElementById("p1window").innerHTML = "MISS";
+    //document.getElementById("p1window").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = "health" - 1;
   }
@@ -135,18 +134,19 @@ function cardCheck2(random, random2) {
         document.getElementById("p1window").innerHTML = "MATCH";
         document.getElementById("match-sound").play();
     } else {
-      document.getElementById("p1window").innerHTML = "MISS";
+      //document.getElementById("p1window").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
-      document.getElementById("health").innerHTML = healthDeduct();
+      document.getElementById("health").innerHTML = healthDeduct(health);
           }
     } 
 }
 
+ 
 function healthDeduct(){
   let health = 20;
-  return health - 1;
- }
+  console.log (health - 1);
 
+}
 
 
 
