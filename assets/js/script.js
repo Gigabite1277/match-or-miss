@@ -93,6 +93,7 @@ document.getElementById("cpudeck1").style.visibility = "hidden";
  * the returned calculateCorrectAnswer array.
  */
 document.getElementById("p1deck1").onclick = function() {cardCheck1()};
+document.getElementById("p1deck1").onclick = function() {cardReveal()};
 document.getElementById("p1deck2").onclick = function() {cardCheck2()};
 document.getElementById("p1deck3").onclick = function() {cardCheck3()};
 /**
@@ -156,21 +157,25 @@ function cardCheck2(random, random2) {
 }
 
 function cardReveal(){
-  
   document.getElementById("cpudeck1").style.visibility = "visable";
 }
 
 function healthDeduct(){
-  let health = 6;
-  for (let health = 6; health > 0; --health) {
+ let health = 6;
   document.getElementById("health").innerHTML = (health - 1);
   health = math.subtract(1, health);
 }
-} 
-     
+
+health = 5;
+while (health > 0) {
+  document.getElementById("cpudeck1").innerHTML = cpuplay();
+}
 
 
 
+//for (let health = 5; health   > 0; --health) ;{
+  // Runs 5 times, with values of step 0 through 4.
+//}
 
 //parseInt(document.getElementById("cpudeck1").value);
 //parseInt(document.getElementById("p1deck1").value);
