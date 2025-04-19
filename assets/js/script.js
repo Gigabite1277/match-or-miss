@@ -32,7 +32,7 @@ cardNoise.addEventListener("click", cardnoise);
 //Event listener: to reveal the hidden card when the user makes a selection.
 let cardShow = document.getElementById("cpudeck1");
 cardShow.addEventListener("click", cardReveal);
-setTimeout(timer, 6000);
+
 
 //Function: to play cardnoise sound effect when PLAY button is clicked
 function cardnoise() {
@@ -156,15 +156,17 @@ function cardCheck2(random, random2) {
 }
 
 function cardReveal(){
-  document.getElementById("cpudeck1").style.visibility = "";
+  
+  document.getElementById("cpudeck1").style.visibility = "visable";
 }
 
 function healthDeduct(){
   let health = 6;
+  for (let health = 6; health > 0; --health) {
   document.getElementById("health").innerHTML = (health - 1);
   health = math.subtract(1, health);
 }
- 
+} 
      
 
 
