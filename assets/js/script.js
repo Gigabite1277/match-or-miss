@@ -29,6 +29,11 @@ document.getElementById("militarydrums").play();
 let cardNoise = document.getElementById("cpubutton");
 cardNoise.addEventListener("click", cardnoise);
 
+//Event listener: to reveal the hidden card when the user makes a selection.
+let cardShow = document.getElementById("cpudeck1");
+cardShow.addEventListener("click", cardReveal);
+setTimeout(timer, 6000);
+
 //Function: to play cardnoise sound effect when PLAY button is clicked
 function cardnoise() {
 document.getElementById("cardnoise1").play();
@@ -82,6 +87,7 @@ setInterval(cardHidden, 700);
 function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
+
 /**
  * Onclick commands for the
  * the returned calculateCorrectAnswer array.
@@ -100,12 +106,14 @@ random = document.getElementById("cpudeck1").innerHTML = randomValue();
 random1 = document.getElementById("p1deck1").innerHTML = randomValue1();
 
 if (random === random1){
-    document.getElementById("p1window").innerHTML = "MATCH";
+    document.getElementById("status").innerHTML = "MATCH";
     document.getElementById("match-sound").play();
+    document.getElementById("cpudeck1").innerHTML = cardReveal();
 } else {
-  //document.getElementById("p1window").innerHTML = "MISS";
+  document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
-  document.getElementById("health").innerHTML = "health" - 1;
+  document.getElementById("health").innerHTML = healthDeduct(health);
+ 
  
 }
 } 
@@ -116,13 +124,16 @@ function cardCheck2(random, random2) {
   
     
   if (random === random2){
-      document.getElementById("p1window").innerHTML = "MATCH";
+      document.getElementById("status").innerHTML = "MATCH";
       document.getElementById("match-sound").play();
+      document.getElementById("cpudeck1").innerHTML = cardReveal();
+     
   } else {
-    //document.getElementById("p1window").innerHTML = "MISS";
+    document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
-    document.getElementById("health").innerHTML = "health" - 1;
-  }
+    document.getElementById("health").innerHTML = healthDeduct(health);
+    
+  } 
   } 
   function cardCheck3(random, random3) {
 
@@ -131,22 +142,30 @@ function cardCheck2(random, random2) {
     
       
     if (random === random3){
-        document.getElementById("p1window").innerHTML = "MATCH";
+        document.getElementById("status").innerHTML = "MATCH";
         document.getElementById("match-sound").play();
+        document.getElementById("cpudeck1").innerHTML = cardReveal();
     } else {
-      //document.getElementById("p1window").innerHTML = "MISS";
+      document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct(health);
+      
+      
           }
     } 
 }
 
- 
-function healthDeduct(){
-  let health = 20;
-  console.log (health - 1);
-
+function cardReveal(){
+  document.getElementById("cpudeck1").style.visibility = "";
 }
+
+function healthDeduct(){
+  let health = 6;
+  document.getElementById("health").innerHTML = (health - 1);
+  health = math.subtract(1, health);
+}
+ 
+     
 
 
 
