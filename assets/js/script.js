@@ -93,7 +93,6 @@ document.getElementById("cpudeck1").style.visibility = "hidden";
  * the returned calculateCorrectAnswer array.
  */
 document.getElementById("p1deck1").onclick = function() {cardCheck1()};
-document.getElementById("p1deck1").onclick = function() {cardReveal()};
 document.getElementById("p1deck2").onclick = function() {cardCheck2()};
 document.getElementById("p1deck3").onclick = function() {cardCheck3()};
 /**
@@ -114,10 +113,9 @@ if (random === random1){
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
   document.getElementById("health").innerHTML = healthDeduct(health);
- 
- 
 }
 } 
+
 function cardCheck2(random, random2) {
 
   random = document.getElementById("cpudeck1").innerHTML = randomValue();
@@ -133,9 +131,9 @@ function cardCheck2(random, random2) {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = healthDeduct(health);
-    
   } 
   } 
+  
   function cardCheck3(random, random3) {
 
     random = document.getElementById("cpudeck1").innerHTML = randomValue();
@@ -150,32 +148,33 @@ function cardCheck2(random, random2) {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct(health);
-      
-      
-          }
+    }
     } 
 }
 
 function cardReveal(){
+  
   document.getElementById("cpudeck1").style.visibility = "visable";
 }
 
 function healthDeduct(){
- let health = 6;
+  for (let health = 6; health > 0; --health) {
   document.getElementById("health").innerHTML = (health - 1);
   health = math.subtract(1, health);
 }
+} 
+     
 
-health = 5;
 while (health > 0) {
-  document.getElementById("cpudeck1").innerHTML = cpuplay();
+  cpuplay();
+  cardCheck1();
+  cardCheck2();
+  cardCheck3();
 }
 
 
 
-//for (let health = 5; health   > 0; --health) ;{
-  // Runs 5 times, with values of step 0 through 4.
-//}
+
 
 //parseInt(document.getElementById("cpudeck1").value);
 //parseInt(document.getElementById("p1deck1").value);
