@@ -31,7 +31,8 @@ cardNoise.addEventListener("click", cardnoise);
 
 //Event listener: to reveal the hidden card when the user makes a selection.
 document.getElementById("p1deck1").addEventListener("click", cardReveal);
-
+document.getElementById("p1deck2").addEventListener("click", cardReveal);
+document.getElementById("p1deck3").addEventListener("click", cardReveal);
 
 //Function: to play cardnoise sound effect when PLAY button is clicked
 function cardnoise() {
@@ -82,7 +83,7 @@ function randomValue() {
  *This code shows the card for 1 second before being hidden although data should be available 
  *to the CPU to run a comparison with the other P1 deck
  */
-setInterval(cardHidden, 700);
+setTimeout(cardHidden, 1000);
 function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
@@ -149,7 +150,8 @@ function cardCheck2(random, random2) {
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct(health);
       
-      
+
+
           }
     } 
 }
@@ -164,6 +166,11 @@ function healthDeduct(){
   for (let health = 6; health > 0; --health) {
   document.getElementById("health").innerHTML = (health - 1);
   health = math.subtract(1, health);
+
+  cpuplay()
+  cardCheck1()
+  cardCheck2()
+  cardCheck3()
 }
 } 
      
