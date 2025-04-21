@@ -154,7 +154,7 @@ function cardCheck2(random, random2) {
       cardCheck1()
       cardCheck2()
       cardCheck3()
-
+      healthDeduct()
           }
     } 
 }
@@ -165,13 +165,23 @@ function cardReveal(){
 }
 
 function healthDeduct(){
-  let health = 6;
-  for (let health = 6; health > 0; --health) {
-  document.getElementById("health").innerHTML = (health - 1);
-  health = math.subtract(1, health);
+let health = 6;
+document.getElementById("health").innerHTML = (health - 1);
+math.subtract, (1, health);
+
 }
-} 
-     
+
+
+
+//function healthDeduct(){
+
+  //for (let health = 6; health > 0; health) {
+  //document.getElementById("health").innerHTML = --health;
+  //health = math.subtract, (1, health);
+  
+//}
+//} 
+  
 
 
 
