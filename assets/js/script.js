@@ -30,8 +30,7 @@ let cardNoise = document.getElementById("cpubutton");
 cardNoise.addEventListener("click", cardnoise);
 
 //Event listener: to reveal the hidden card when the user makes a selection.
-let cardShow = document.getElementById("cpudeck1");
-cardShow.addEventListener("click", cardReveal);
+document.getElementById("p1deck1").addEventListener("click", cardReveal);
 
 
 //Function: to play cardnoise sound effect when PLAY button is clicked
@@ -54,10 +53,10 @@ document.getElementById("cpubutton").onclick = function() {cpuplay()};
 function cpuplay(random, random1, random2, random3) {
 
   
-deck = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
-deck1 = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
-deck2 = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
-deck3 = ["assets/images/100.png","assets/images/200.png","assets/images/300.png","assets/images/400.png"];
+deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
+deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
+deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
+deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
 random = Math.floor(Math.random(deck) *deck.length);
 random1 = Math.floor(Math.random(deck1) *deck1.length);
 random2 = Math.floor(Math.random(deck2) *deck2.length);
@@ -113,9 +112,10 @@ if (random === random1){
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
   document.getElementById("health").innerHTML = healthDeduct(health);
+ 
+ 
 }
 } 
-
 function cardCheck2(random, random2) {
 
   random = document.getElementById("cpudeck1").innerHTML = randomValue();
@@ -131,9 +131,9 @@ function cardCheck2(random, random2) {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = healthDeduct(health);
+    
   } 
   } 
-  
   function cardCheck3(random, random3) {
 
     random = document.getElementById("cpudeck1").innerHTML = randomValue();
@@ -148,30 +148,25 @@ function cardCheck2(random, random2) {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct(health);
-    }
+      
+      
+          }
     } 
 }
 
 function cardReveal(){
   
-  document.getElementById("cpudeck1").style.visibility = "visable";
+  document.getElementById("cpudeck1").style.visibility = "";
 }
 
 function healthDeduct(){
+  let health = 6;
   for (let health = 6; health > 0; --health) {
   document.getElementById("health").innerHTML = (health - 1);
   health = math.subtract(1, health);
 }
 } 
      
-
-while (health > 0) {
-  cpuplay();
-  cardCheck1();
-  cardCheck2();
-  cardCheck3();
-}
-
 
 
 
@@ -181,7 +176,7 @@ while (health > 0) {
 //let p1deck1 = random === random1;
 //let cpudeck1 = random === random1;
 
-//deck = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
-//deck1 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
-//deck2 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
-//deck3 = ["assets/images/carddeck/3_of_spades.png","assets/images/carddeck/2_of_hearts.png","assets/images/carddeck/4_of_spades.png","assets/images/carddeck/5_of_clubs.png"];
+//deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
+//deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
+//deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
+//deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
