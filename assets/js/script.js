@@ -150,7 +150,10 @@ function cardCheck2(random, random2) {
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct(health);
       
-
+      cpuplay()
+      cardCheck1()
+      cardCheck2()
+      cardCheck3()
 
           }
     } 
@@ -166,11 +169,6 @@ function healthDeduct(){
   for (let health = 6; health > 0; --health) {
   document.getElementById("health").innerHTML = (health - 1);
   health = math.subtract(1, health);
-
-  cpuplay()
-  cardCheck1()
-  cardCheck2()
-  cardCheck3()
 }
 } 
      
