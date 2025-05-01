@@ -51,7 +51,7 @@ document.getElementById("cardnoise1").play();
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
 
-health = 6;
+
 
 
 function cpuplay(random, random1, random2, random3) {
@@ -112,11 +112,13 @@ if (random === random1){
     document.getElementById("status").innerHTML = "MATCH";
     document.getElementById("match-sound").play();
     document.getElementById("cpudeck1").innerHTML = cardReveal();
-    cardCheck1(random, random1)
+    startGame()
+    
 } else {
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
-  document.getElementById("health").innerHTML = healthDeduct();
+  document.getElementById("health").innerHTML = healthDeduct(); 
+  startGame()
 }
 } 
 function cardCheck2(random, random2) {
@@ -129,11 +131,13 @@ function cardCheck2(random, random2) {
       document.getElementById("status").innerHTML = "MATCH";
       document.getElementById("match-sound").play();
       document.getElementById("cpudeck1").innerHTML = cardReveal();
+      startGame()
      
   } else {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = healthDeduct();
+    startGame()
     } 
   } 
   function cardCheck3(random, random3) {
@@ -146,10 +150,12 @@ function cardCheck2(random, random2) {
         document.getElementById("status").innerHTML = "MATCH";
         document.getElementById("match-sound").play();
         document.getElementById("cpudeck1").innerHTML = cardReveal();
+        startGame()
     } else {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct();
+      startGame()
                 }
     } 
 }
@@ -160,11 +166,12 @@ function cardReveal(){
 }
 
 
-
 function healthDeduct() {
+
+  let health = parseInt(document.getElementById("health").innerHTML);
     if (health > 0) {
         --health;
-        document.getElementById("health").innerHTML = "health" - 1;
+        document.getElementById("health").innerHTML = startGame(health);
         if (health === 0) {
             document.getElementById("status").innerHTML = "Game Over";
             // Additional logic to end the game
@@ -184,14 +191,13 @@ function healthDeduct() {
   //}
 
 
-  
-  //cpuplay()
-  //cardCheck1()
-  //cardCheck2()
-  //cardCheck3()
-  //healthDeduct()
-  
-
+  function startGame() {
+  //cpuplay();
+  //cardCheck1();
+  //cardCheck2();
+  //cardCheck3();
+  //healthDeduct();
+  }
 
 
 
