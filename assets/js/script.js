@@ -1,5 +1,6 @@
 
 
+
 var c = setInterval(showclock,1000)
  function showclock(){
  var seconds = document.getElementById("countdown").textContent;
@@ -50,7 +51,7 @@ document.getElementById("cardnoise1").play();
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
 
-
+health = 6;
 
 
 function cpuplay(random, random1, random2, random3) {
@@ -103,10 +104,7 @@ document.getElementById("p1deck3").onclick = function() {cardCheck3()};
  * There are 3 cardCheck functions, as the human has three decks to make a select one
  * card from.
  */
-
-
-function cardCheck1(random, random1, ) {
-  
+function cardCheck1(random, random1) {
 random = document.getElementById("cpudeck1").innerHTML = randomValue();
 random1 = document.getElementById("p1deck1").innerHTML = randomValue1();
 
@@ -114,17 +112,15 @@ if (random === random1){
     document.getElementById("status").innerHTML = "MATCH";
     document.getElementById("match-sound").play();
     document.getElementById("cpudeck1").innerHTML = cardReveal();
-    document.getElementById("health").innerHTML = healthDeduct();
+    cardCheck1(random, random1)
 } else {
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
   document.getElementById("health").innerHTML = healthDeduct();
- 
- 
 }
 } 
 function cardCheck2(random, random2) {
- 
+
   random = document.getElementById("cpudeck1").innerHTML = randomValue();
   random2 = document.getElementById("p1deck2").innerHTML = randomValue2();
   
@@ -133,17 +129,15 @@ function cardCheck2(random, random2) {
       document.getElementById("status").innerHTML = "MATCH";
       document.getElementById("match-sound").play();
       document.getElementById("cpudeck1").innerHTML = cardReveal();
-      document.getElementById("health").innerHTML = healthDeduct();
      
   } else {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = healthDeduct();
-    
-  } 
+    } 
   } 
   function cardCheck3(random, random3) {
-    
+
     random = document.getElementById("cpudeck1").innerHTML = randomValue();
     random3 = document.getElementById("p1deck3").innerHTML = randomValue3();
     
@@ -152,14 +146,11 @@ function cardCheck2(random, random2) {
         document.getElementById("status").innerHTML = "MATCH";
         document.getElementById("match-sound").play();
         document.getElementById("cpudeck1").innerHTML = cardReveal();
-        document.getElementById("health").innerHTML = healthDeduct();
     } else {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct();
-      
-
-          }
+                }
     } 
 }
 
@@ -169,26 +160,37 @@ function cardReveal(){
 }
 
 
-let health = 6;
-function healthDeduct(){
 
-  if (health > 0) {
+function healthDeduct() {
+    if (health > 0) {
+        --health;
+        document.getElementById("health").innerHTML = "health" - 1;
+        if (health === 0) {
+            document.getElementById("status").innerHTML = "Game Over";
+            // Additional logic to end the game
+        }
+    }
+        return health
+  }
 
---health;
-document.getElementById("health").innerHTML = healthDeduct(health);
-if (health === 0) {
-    document.getElementById("status").innerHTML = "Game Over";
-return health;
-    // Additional logic to end the game
-}
-
-}  
-}
-
+//
+  //if (health > 0) {
+    //  health -= 1;
+      //document.getElementById("health").innerHTML = --health;
+      //if (health === 0) {
+          //document.getElementById("status").innerHTML = "Game Over";
+          // Additional logic to end the game
+      //}
+  //}
 
 
-
-
+  
+  //cpuplay()
+  //cardCheck1()
+  //cardCheck2()
+  //cardCheck3()
+  //healthDeduct()
+  
 
 
 
