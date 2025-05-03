@@ -1,6 +1,4 @@
 
-
-
 var c = setInterval(showclock,1000)
  function showclock(){
  var seconds = document.getElementById("countdown").textContent;
@@ -20,6 +18,7 @@ var c = setInterval(showclock,1000)
   document.getElementById("countdown").innerHTML = "";
   
 }
+
 
 //HUD background image
 
@@ -90,7 +89,6 @@ setTimeout(cardHidden, 1000);
 function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
-
 /**
  * Onclick commands for the
  * the returned calculateCorrectAnswer array.
@@ -112,13 +110,13 @@ if (random === random1){
     document.getElementById("status").innerHTML = "MATCH";
     document.getElementById("match-sound").play();
     document.getElementById("cpudeck1").innerHTML = cardReveal();
-    startGame()
+   
     
 } else {
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
   document.getElementById("health").innerHTML = healthDeduct(); 
-  startGame()
+  
 }
 } 
 function cardCheck2(random, random2) {
@@ -131,13 +129,13 @@ function cardCheck2(random, random2) {
       document.getElementById("status").innerHTML = "MATCH";
       document.getElementById("match-sound").play();
       document.getElementById("cpudeck1").innerHTML = cardReveal();
-      startGame()
+      
      
   } else {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = healthDeduct();
-    startGame()
+    
     } 
   } 
   function cardCheck3(random, random3) {
@@ -150,15 +148,15 @@ function cardCheck2(random, random2) {
         document.getElementById("status").innerHTML = "MATCH";
         document.getElementById("match-sound").play();
         document.getElementById("cpudeck1").innerHTML = cardReveal();
-        startGame()
+        
     } else {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct();
-      startGame()
+      
                 }
     } 
-}
+  }
 
 function cardReveal(){
   
@@ -166,18 +164,21 @@ function cardReveal(){
 }
 
 
+  var health = 6;
+
+
 function healthDeduct() {
 
-  let health = parseInt(document.getElementById("health").innerHTML);
+ 
     if (health > 0) {
-        --health;
-        document.getElementById("health").innerHTML = startGame(health);
+       
+        document.getElementById("health").innerHTML = --health;
         if (health === 0) {
             document.getElementById("status").innerHTML = "Game Over";
             // Additional logic to end the game
         }
     }
-        return health
+        return health;
   }
 
 //
@@ -191,13 +192,7 @@ function healthDeduct() {
   //}
 
 
-  function startGame() {
-  //cpuplay();
-  //cardCheck1();
-  //cardCheck2();
-  //cardCheck3();
-  //healthDeduct();
-  }
+ 
 
 
 
