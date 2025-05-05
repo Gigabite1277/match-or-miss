@@ -102,9 +102,11 @@ document.getElementById("p1deck3").onclick = function() {cardCheck3()};
  * card from.
  */
 
-
-
-function cardCheck1(random, random1) {
+{
+var health = 6;
+}
+function cardCheck1(random, random1, health) {
+  
 random = document.getElementById("cpudeck1").innerHTML = randomValue();
 random1 = document.getElementById("p1deck1").innerHTML = randomValue1();
 
@@ -120,10 +122,11 @@ if (random === random1){
   //document.getElementById("health").innerHTML = healthDeduct(); 
   document.getElementById("health").innerHTML = --health;
   
+  }
 }
-} 
-function cardCheck2(random, random2) {
 
+function cardCheck2(random, random2, health) {
+ 
   random = document.getElementById("cpudeck1").innerHTML = randomValue();
   random2 = document.getElementById("p1deck2").innerHTML = randomValue2();
   
@@ -141,9 +144,10 @@ function cardCheck2(random, random2) {
     document.getElementById("health").innerHTML = --health;
     
     } 
+   
   } 
-  function cardCheck3(random, random3) {
-
+  function cardCheck3(random, random3, health) {
+   
     random = document.getElementById("cpudeck1").innerHTML = randomValue();
     random3 = document.getElementById("p1deck3").innerHTML = randomValue3();
     
@@ -153,35 +157,39 @@ function cardCheck2(random, random2) {
         document.getElementById("match-sound").play();
         document.getElementById("cpudeck1").innerHTML = cardReveal();
         
-    } else {
+    } 
+  else {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       //document.getElementById("health").innerHTML = healthDeduct();
       document.getElementById("health").innerHTML = --health;
       
                 }
+               
     } 
   }
 
 function cardReveal(){
-  
-  document.getElementById("cpudeck1").style.visibility = "";
+document.getElementById("cpudeck1").style.visibility = "";
 }
 
-{
-  var  health = 6;
-  } 
 
-function healthDeduct() {
-     if (health > 0)
-      health -= 1;
-            document.getElementById("health").innerHTML = health;
+
+
+//{
+ 
+  //} 
+
+//function healthDeduct() {
+     //if (health > 0)
+      //health -= 1;
+            //document.getElementById("health").innerHTML = health;
             
-        if (health === 0) {
-            document.getElementById("status").innerHTML = "Game Over";
+        //if (health === 0) {
+            //document.getElementById("status").innerHTML = "Game Over";
             // Additional logic to end the game
-        }
-    }
+        //}
+    //}
 
 
 //
