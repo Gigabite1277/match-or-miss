@@ -54,10 +54,10 @@ document.getElementById("cpubutton").onclick = function() {cpuplay()};
 function cpuplay(random, random1, random2, random3) {
 
   
-deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
-deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
-deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
-deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png", "assets/images/newdeck/ace_of_spades2.png","assets/images/newdeck/jack_of_clubs2.png","assets/images/newdeck/jack_of_diamonds2.png","assets/images/newdeck/king_of_clubs2.png", "assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/king_of_diamonds2.png","assets/images/newdeck/queen_of_hearts2.png"];
+deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png"];
+deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png"];
+deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png"];
+deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png"];
 random = Math.floor(Math.random(deck) *deck.length);
 random1 = Math.floor(Math.random(deck1) *deck1.length);
 random2 = Math.floor(Math.random(deck2) *deck2.length);
@@ -120,7 +120,7 @@ if (random === random1){
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
   document.getElementById("health").innerHTML = healthDeduct(); 
-  //document.getElementById("health").innerHTML = --health;
+  document.getElementById("health").innerHTML = --health;
   
   }
 }
@@ -141,7 +141,7 @@ function cardCheck2(random, random2) {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = healthDeduct();
-   // document.getElementById("health").innerHTML = --health;
+   document.getElementById("health").innerHTML = --health;
     
     } 
    
@@ -162,7 +162,7 @@ function cardCheck2(random, random2) {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct();
-      //document.getElementById("health").innerHTML = --health;
+      document.getElementById("health").innerHTML = --health;
       
                 }
                

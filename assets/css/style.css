@@ -72,7 +72,9 @@ body {
   align-items: center;
   flex-direction:column;
   background-color: black;
-  padding-top: 2%;
+  margin-left: 20%;
+  margin-top: 20%;
+  
   color: chartreuse;
   font-size: 30px;
 
@@ -133,6 +135,8 @@ body {
   font-size: xx-large;
   color: chartreuse ;
   background-color: black;
+ 
+ 
 }  
 
 #homewindow 
@@ -146,6 +150,7 @@ body {
   font-size: xx-large;
   color: chartreuse ;
   background-color: black;
+
 }  
 .nav-item 
           {
@@ -157,10 +162,14 @@ body {
             padding: 3px;
             margin-right: 5%;
             margin-left: 5%;
+            
+            
           
           }
           
-
+li {
+  color:black;
+}
 
 
 
