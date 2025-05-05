@@ -72,9 +72,7 @@ body {
   align-items: center;
   flex-direction:column;
   background-color: black;
-  margin-left: 20%;
-  margin-top: 20%;
-  
+  padding-top: 2%;
   color: chartreuse;
   font-size: 30px;
 
