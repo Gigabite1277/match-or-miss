@@ -20,6 +20,7 @@ var c = setInterval(showclock,1000)
 }
 
 
+
 //HUD background image
 
 document.getElementById("hudwindow").style.backgroundImage = "url(assets/images/greenhud350.png)";
@@ -45,13 +46,9 @@ document.getElementById("cardnoise1").play();
 //const holdPlay = setTimeout(cpuplay, 5000);
 
 
-//Code to randomly display 1 cpu data card and three Player 1 decks
+//Code to randomly display 1 cpu deck and three Player 1 decks 1-3
 
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
-
-
-
-
 
 function cpuplay(random, random1, random2, random3) {
 
@@ -89,9 +86,10 @@ setTimeout(cardHidden, 1000);
 function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
+
 /**
- * Onclick commands for the
- * the returned calculateCorrectAnswer array.
+ * Onclick commands for the returned calculateCorrectAnswer array.
+ * 
  */
 document.getElementById("p1deck1").onclick = function() {cardCheck1()};
 document.getElementById("p1deck2").onclick = function() {cardCheck2()};
@@ -110,13 +108,14 @@ if (random === random1){
     document.getElementById("status").innerHTML = "MATCH";
     document.getElementById("match-sound").play();
     document.getElementById("cpudeck1").innerHTML = cardReveal();
+    cpuplay();
    
     
 } else {
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
   document.getElementById("health").innerHTML = healthDeduct(); 
-  
+  cpuplay();
 }
 } 
 function cardCheck2(random, random2) {
@@ -129,13 +128,13 @@ function cardCheck2(random, random2) {
       document.getElementById("status").innerHTML = "MATCH";
       document.getElementById("match-sound").play();
       document.getElementById("cpudeck1").innerHTML = cardReveal();
-      
+      cpuplay();
      
   } else {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = healthDeduct();
-    
+    cpuplay();
     } 
   } 
   function cardCheck3(random, random3) {
@@ -148,12 +147,12 @@ function cardCheck2(random, random2) {
         document.getElementById("status").innerHTML = "MATCH";
         document.getElementById("match-sound").play();
         document.getElementById("cpudeck1").innerHTML = cardReveal();
-        
+        cpuplay();
     } else {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct();
-      
+      cpuplay();
                 }
     } 
   }
@@ -163,24 +162,21 @@ function cardReveal(){
   document.getElementById("cpudeck1").style.visibility = "";
 }
 
+{
 
-  var health = 6;
-
-
+}
 function healthDeduct() {
-
- 
-    if (health > 0) {
-       
-        document.getElementById("health").innerHTML = --health;
+     if (health > 0) {
+    (health - 1);
+        document.getElementById("health").innerHTML = health - 1;
         if (health === 0) {
             document.getElementById("status").innerHTML = "Game Over";
             // Additional logic to end the game
         }
     }
-        return health;
+       
   }
-
+let health = 6;
 //
   //if (health > 0) {
     //  health -= 1;
