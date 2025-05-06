@@ -55,9 +55,9 @@ function cpuplay(random, random1, random2, random3) {
 
   
 deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
-deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/2_of_diamonds.png"];
-deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png"];
-deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/3_of_hearts.png"];
+deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
+deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
+deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
 random = Math.floor(Math.random(deck) *deck.length);
 random1 = Math.floor(Math.random(deck1) *deck1.length);
 random2 = Math.floor(Math.random(deck2) *deck2.length);
