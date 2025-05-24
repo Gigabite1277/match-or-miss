@@ -52,10 +52,10 @@ body {
 }
 .content { grid-area: content;
           background-color: rgb(46, 46, 46);
-          max-height: 1000px;
+          
           display: flex;
-          flex-wrap: nowrap;
-           flex-direction:row;
+          flex-wrap: wrap;
+          flex-direction:row;
           justify-content: space-between;
           padding: 5%;  
          
@@ -215,9 +215,10 @@ body {
                             
                            
                            
-                           order: 0;
+                           order: 1;
                            flex-basis: 49%;
                            row-gap: 10px;
+                           
 
     }
   }
@@ -225,9 +226,10 @@ body {
   @media screen and (max-width: 800px) {
     #cpuwindow {          
                            
-                          order: 0;
+                          order: 1;
                           flex-basis: 49%;
-                          ;
+                          
+                          
                }
   }
 
