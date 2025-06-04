@@ -156,12 +156,13 @@ body {
             border-color: silver;
             background-color: forestgreen;
             padding: 3px;
-            margin-right: 5%;
-            margin-left: 5%;
+            
           
           }
           
-
+.navbar {
+  background-color: rgb(32, 33, 32);
+}
 
 
 

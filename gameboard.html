@@ -13,24 +13,30 @@
 <title>Mix and Match Home</title> 
 <img id="mmlogosmall" src="assets/images/mombannernew400.png" alt="Mix n Match Logo">
   <img id="mmlogomed" src="assets/images/mombannernew700.png" alt="Mix n Match Logo">
-  <ul class="nav">
+    
+  
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+  <ul class="navbar-nav">
     <li class="nav-item">
-      <a aria-current="page" href="index.html">Home</a>
+      <a class="nav-link" href="index.html">Home</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="rules.html">Rules</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="gameboard.html">Play Match or Miss</a>
+      <a class="nav-link" href="gameboard.html">PLAY! Match or Miss</a>
     </li>
-    
   </ul>
-    </div>
+</nav>
+     </div>
+
+    
 <!--This is the code for the central grid area that holds the CPU, HUD and Player1 windows-->
 
     <div class="content">
 <!--This is the code for the CPU window
 -->
+
 <div id="cpuwindow"><br>
   <h3>CPU</h3>
   <img src="assets/images/nodata100.png" id="cpudeck1"  width="68" height="100" alt="The No Data Card"><br>
@@ -62,7 +68,7 @@
 </audio>
     </div>
      <!--This is the code for the Player 1 window hold the three cards-->
-     <div id="p1window">Player 1<br> <img id="p1deck1" src="assets/images/nodata100.png"  onclick="cpuplay()">
+     <div id="p1window">Player 1<br> <img id="p1deck1" src="assets/images/nodata100.png"  onclick="cardCheck1()" onclick="cpuplay()">
       <img id="p1deck2" src="assets/images/nodata100.png"  onclick="cardCheck2()" onclick="cpuplay()">
       <img id="p1deck3" src="assets/images/nodata100.png"  onclick="cardCheck3()" onclick="cpuplay()"><br>
      
