@@ -20,7 +20,6 @@
 }
 
 #cpuwindow { grid-area: cpu;
-  
 
 }
 
@@ -32,7 +31,17 @@
 
 }
 
-.cpubutton {}
+#cpubutton { 
+  background-color: rgb(32, 33, 32);
+  color: chartreuse;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: darkgreen;
+  padding: 5px;
+  font-size: x-large;
+
+}
 
 
 body {
@@ -59,6 +68,7 @@ body {
           flex-direction:row;
           justify-content: space-around;
           padding: 5%;
+          padding-left: 15%;
          
 }
 
@@ -73,6 +83,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction:column;
+  justify-content: space-around;
    background-color: black;
   padding-top: 2%;
   color: chartreuse;
@@ -173,11 +184,15 @@ body {
           margin-top: 3;
         
 }
-.ruleswindow {
-      padding:20px;
+#ruleswindow {
+      padding:10%;
 }
 
-
+#homewindow {
+      padding-top: 10%;
+      padding-left :5%;
+      padding-right :5%;
+}
 
 
   @media screen and (min-width: 972px) {
