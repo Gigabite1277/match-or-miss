@@ -32,6 +32,7 @@
 
 }
 
+.cpubutton {}
 
 
 body {
@@ -152,17 +153,15 @@ body {
           {
             border-style:ridge;
             border-radius: 5px;
-            border-width: 2px;
+            border-width: 5px;
             border-color: silver;
             background-color: forestgreen;
             padding: 3px;
-            
+            margin-left: 35px;
+            margin-right: 35px;
+            color: black;
+      }
           
-          }
-          
-.navbar {
-  background-color: rgb(32, 33, 32);
-}
 
 
 
@@ -174,7 +173,9 @@ body {
           margin-top: 3;
         
 }
-
+.ruleswindow {
+      padding:20px;
+}
 
 
 
