@@ -62,13 +62,12 @@ body {
 }
 .content { grid-area: content;
           background-color: rgb(46, 46, 46);
-          
           display: flex;
           flex-wrap: wrap;
-          flex-direction:row;
+          
           justify-content: space-around;
           padding: 5%;
-          padding-left: 15%;
+          
          
 }
 li {
@@ -82,7 +81,6 @@ li {
   border-color: darkgreen;
   width: 15%;
   height:100%;
-  
   display: flex;
   align-items: center;
   flex-direction:column;
@@ -172,10 +170,11 @@ li {
             border-width: 5px;
             border-color: silver;
             background-color: forestgreen;
-            padding: 3px;
+            padding: 2px;
             margin-left: 35px;
             margin-right: 35px;
             color: black;
+            font-weight: bold;
       }
           
 
