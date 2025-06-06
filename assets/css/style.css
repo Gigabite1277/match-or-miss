@@ -46,7 +46,7 @@
 
 body {
      margin-top: 5%;
-     margin-left: 10%;
+     margin-left: 15%;
      margin-right: 10%;
      
      
@@ -115,6 +115,10 @@ li {
   font-size: 25px;
 }
 
+#p1deck1, #p1deck2, #p1deck3 {
+ padding-top: 10px;
+         
+}
 #hudwindow {  
   border-style: solid;
   border-width: 5px;

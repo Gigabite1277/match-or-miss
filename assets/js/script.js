@@ -33,10 +33,7 @@ document.getElementById("militarydrums").play();
 let cardNoise = document.getElementById("cpubutton");
 cardNoise.addEventListener("click", cardnoise);
 
-//Event listener: to reveal the hidden card when the user makes a selection.
-document.getElementById("p1deck1").addEventListener("click", cardReveal);
-document.getElementById("p1deck2").addEventListener("click", cardReveal);
-document.getElementById("p1deck3").addEventListener("click", cardReveal);
+
 
 //Function: to play cardnoise sound effect when PLAY button is clicked
 function cardnoise() {
@@ -51,22 +48,29 @@ document.getElementById("cardnoise1").play();
 
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
-function cpuplay(random, random1, random2, random3) {
+
+
+
+
+function cpuplay(random, random1, random2, random3, random4) {
 
   
 deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
 deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
 deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
 deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
+deck4 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
 random = Math.floor(Math.random(deck) *deck.length);
 random1 = Math.floor(Math.random(deck1) *deck1.length);
 random2 = Math.floor(Math.random(deck2) *deck2.length);
 random3 = Math.floor(Math.random(deck3) *deck3.length);
+random4 = Math.floor(Math.random(deck4) *deck4.length);
 document.getElementById("cpudeck1").src = deck[random];
 document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
-
+document.getElementById("p1deck4").src = deck4[random4];
+}
 function randomValue() {
   return random  
   }
@@ -79,11 +83,16 @@ function randomValue() {
         function randomValue3() {
           return random3  
             }
+            function randomValue4() {
+          return random4  
+            }
+
+
 /**
  *This code shows the card for 1 second before being hidden although data should be available 
  *to the CPU to run a comparison with the other P1 deck
  */
-setTimeout(cardHidden, 1000);
+
 function cardHidden(){
 document.getElementById("cpudeck1").style.visibility = "hidden";
 }
@@ -95,6 +104,7 @@ document.getElementById("cpudeck1").style.visibility = "hidden";
 document.getElementById("p1deck1").onclick = function() {cardCheck1()};
 document.getElementById("p1deck2").onclick = function() {cardCheck2()};
 document.getElementById("p1deck3").onclick = function() {cardCheck3()};
+document.getElementById("p1deck4").onclick = function() {cardCheck4()};
 /**
  * Code for the ther cardCheck function to check if cpudeck1(random) is the same as 
  * the p1deck1, p1deck2, p1deck3.
@@ -165,15 +175,40 @@ function cardCheck2(random, random2) {
       document.getElementById("health").innerHTML = --health;
       
                 }
-               
-    } 
+              }
+
+    function cardCheck4(random, random4) {
+   
+    random = document.getElementById("cpudeck1").innerHTML = randomValue();
+    random4 = document.getElementById("p1deck4").innerHTML = randomValue4();
+    
+    if (random === random4) {
+        document.getElementById("status").innerHTML = "MATCH";
+        document.getElementById("match-sound").play();
+        document.getElementById("cpudeck1").innerHTML = cardReveal();
+        
+    } else {
+      document.getElementById("status").innerHTML = "MISS";
+      document.getElementById("miss-sound").play();
+      document.getElementById("health").innerHTML = healthDeduct();
+      document.getElementById("health").innerHTML = --health;
+  }
   }
 
-function cardReveal(){
+  //Code to hide the CPU card
+document.getElementById("cpubutton").onclick = function() {cardHidden()};
+
+//Event listener: to reveal the hidden card when the user makes a selection.
+document.getElementById("p1deck1").addEventListener("click", cardReveal);
+document.getElementById("p1deck2").addEventListener("click", cardReveal);
+document.getElementById("p1deck3").addEventListener("click", cardReveal);
+document.getElementById("p1deck4").addEventListener("click", cardReveal);
+
+
+
+function cardReveal() {
 document.getElementById("cpudeck1").style.visibility = "";
 }
-
-
 
 function healthDeduct(health) {
   var health = 1;
@@ -188,4 +223,3 @@ function healthDeduct(health) {
     }
   
   
-
