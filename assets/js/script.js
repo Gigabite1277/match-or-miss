@@ -44,15 +44,13 @@ document.getElementById("cardnoise1").play();
 //const holdPlay = setTimeout(cpuplay, 5000);
 
 
-//Code to randomly display 1 cpu deck and three Player 1 decks 1-3
+//Code to randomly display 1 cpu deck and three Player 1 decks 1-4
+
 
 document.getElementById("cpubutton").onclick = function() {cpuplay()};
 
 
-
-
-
-function cpuplay(random, random1, random2, random3, random4) {
+function cpuplay (random, random1, random2, random3, random4) {
 
   
 deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
@@ -70,6 +68,7 @@ document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
 document.getElementById("p1deck4").src = deck4[random4];
+
 }
 function randomValue() {
   return random  
@@ -87,7 +86,7 @@ function randomValue() {
           return random4  
             }
 
-
+        
 /**
  *This code shows the card for 1 second before being hidden although data should be available 
  *to the CPU to run a comparison with the other P1 deck
@@ -167,8 +166,7 @@ function cardCheck2(random, random2) {
         document.getElementById("match-sound").play();
         document.getElementById("cpudeck1").innerHTML = cardReveal();
         
-    } 
-  else {
+    } else {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct();
@@ -210,8 +208,9 @@ function cardReveal() {
 document.getElementById("cpudeck1").style.visibility = "";
 }
 
+
 function healthDeduct(health) {
-  var health = 1;
+  var health = 10;
      if (health > 0)
       --health;
             document.getElementById("health").innerHTML =  health;
