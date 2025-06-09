@@ -15,7 +15,7 @@
      border-width: 5px;
      border-radius: 6px;
      border-color: darkgreen;
-     min-width: 564px;
+
   
 }
 
@@ -47,7 +47,7 @@
 body {
      margin-top: 5%;
      margin-left: 15%;
-     margin-right: 10%;
+     margin-right: 15%;
      
      
 }
@@ -57,7 +57,7 @@ body {
 .header { grid-area: header; 
           background-color: rgb(32, 33, 32);
           padding-left: 25%;
-          padding-right: 20%;
+          padding-right: 25%;
      
 }
 .content { grid-area: content;
@@ -115,7 +115,7 @@ li {
   font-size: 25px;
 }
 
-#p1deck1, #p1deck2, #p1deck3 {
+#p1deck1, #p1deck2, #p1deck3, #p1deck4 {
  padding-top: 10px;
          
 }
@@ -146,11 +146,13 @@ li {
   border-width: 5px;
   border-radius: 6px;
   border-color: darkgreen;
-  width: 60%;
-  margin-left: 20%;
+  width: 55%;
+  
   font-size: xx-large;
   color: chartreuse ;
   background-color: black;
+  padding:10%;
+
 }  
 
 #homewindow 
@@ -159,13 +161,12 @@ li {
   border-width: 5px;
   border-radius: 6px;
   border-color: darkgreen;
-  width: 60%;
-  margin-left: 20%;
+  width: 55%;
   font-size: xx-large;
   color: chartreuse ;
   background-color: black;
-        padding:10%;
-      margin-left: -14%;
+  padding:10%;
+    
 }  
 .nav-item 
           {
@@ -218,7 +219,7 @@ li {
  
   @media screen and (max-width: 1350px) {
     .header {     padding-left:10%;   
-                  padding-right:0%;
+                  padding-right:10%;
   }
   }
 
