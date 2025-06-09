@@ -1,4 +1,5 @@
-.container1 {  display: grid;
+.container1 {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.3fr 2.8fr 0.2fr;
   grid-auto-rows: 1fr;
@@ -8,30 +9,59 @@
     "header header header"
     "content content content"
     "footer footer footer";
-    border-style: solid; 
-    border-radius: 5px;
-    /*margin-top: 5%;*/
-    border-style: solid;
-     border-width: 5px;
-     border-radius: 6px;
-     border-color: darkgreen;
+  border-style: solid;
+  border-radius: 5px;
+  /*margin-top: 5%;*/
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+  border-color: darkgreen;
 
-  
-}
-
-#cpuwindow { grid-area: cpu;
 
 }
 
-#p1window { grid-area: player1;
+#cpuwindow {
+  grid-area: cpu;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+  border-color: darkgreen;
+  width: 15%;
+  height: 100%;
+  display: flex;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: black;
-  justify-items:center;
-
+  padding-top: 2%;
+  color: chartreuse;
+  font-size: 30px;
 }
 
-#cpubutton { 
+#p1window {
+  grid-area: player1;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  justify-items: center;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+  border-color: darkgreen;
+  width: 15%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
+  padding-top: 4%;
+  color: chartreuse;
+  font-size: 25px;
+}
+
+#cpubutton {
   background-color: rgb(32, 33, 32);
   color: chartreuse;
   border-style: solid;
@@ -45,81 +75,56 @@
 
 
 body {
-     margin-top: 5%;
-     margin-left: 15%;
-     margin-right: 15%;
-     
-     
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+
 }
 
 
 
-.header { grid-area: header; 
-          background-color: rgb(32, 33, 32);
-          padding-left: 25%;
-          padding-right: 25%;
-     
+.header {
+  grid-area: header;
+  background-color: rgb(32, 33, 32);
+  padding-left: 25%;
+  padding-right: 25%;
+
 }
-.content { grid-area: content;
-          background-color: rgb(46, 46, 46);
-          display: flex;
-          flex-wrap: wrap;
-          
-          justify-content: space-around;
-          padding: 5%;
-          
-         
+
+.content {
+  grid-area: content;
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+
 }
+
 li {
   color: black;
 }
 
-#cpuwindow {
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 6px;
-  border-color: darkgreen;
-  width: 15%;
-  height:100%;
-  display: flex;
-  align-items: center;
-  flex-direction:column;
-  justify-content: space-around;
-   background-color: black;
-  padding-top: 2%;
-  color: chartreuse;
-  font-size: 30px;
 
-}
 
 #cpudeck1 {
-          height: 100px;
-          width: 68px;
+  height: 100px;
+  width: 68px;
 }
 
-#p1window {
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 6px;
-  border-color: darkgreen;
-  width: 15%;
-  height:100%;
-  align-items: center;
-  flex-direction:column;
-  background-color: black;
-  justify-content: space-around;
-  justify-content: center;
-  text-align: center;
-  padding-top: 4%;
-  color: chartreuse;
-  font-size: 25px;
+
+
+#p1deck1,
+#p1deck2,
+#p1deck3,
+#p1deck4 {
+  padding-top: 10px;
+
 }
 
-#p1deck1, #p1deck2, #p1deck3, #p1deck4 {
- padding-top: 10px;
-         
-}
-#hudwindow {  
+#hudwindow {
   border-style: solid;
   border-width: 5px;
   border-radius: 6px;
@@ -130,143 +135,149 @@ li {
   display: flex;
   justify-content: center;
   background-color: black;
-    }
+}
 
-#countdown  
-{
+#countdown {
   font-size: 200px;
-  
+
 }
-  
-
-
-#ruleswindow 
-{
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 6px;
-  border-color: darkgreen;
-  width: 55%;
-  
-  font-size: xx-large;
-  color: chartreuse ;
-  background-color: black;
-  padding:10%;
-
-}  
-
-#homewindow 
-{
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 6px;
-  border-color: darkgreen;
-  width: 55%;
-  font-size: xx-large;
-  color: chartreuse ;
-  background-color: black;
-  padding:10%;
-    
-}  
-.nav-item 
-          {
-            border-style:ridge;
-            border-radius: 5px;
-            border-width: 5px;
-            border-color: silver;
-            background-color: forestgreen;
-            padding: 2px;
-            margin-left: 35px;
-            margin-right: 35px;
-            color: black;
-            font-weight: bold;
-      }
-          
 
 
 
-
-
-.footer { grid-area: footer;
-          background-color: rgb(81, 113, 50);
-          padding-top:7%;
-          margin-top: 3;
-        
-}
 #ruleswindow {
-      padding:10%;
-      margin-left: -14%;
+  /* border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+  border-color: darkgreen;
+  width: fit-content;
+
+  font-size: xx-large;
+  color: chartreuse ;
+  background-color: black;*/
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+  border-color: darkgreen;
+  width: 55%;
+  font-size: xx-large;
+  color: chartreuse;
+  background-color: black;
+  padding: 10%;
+
 }
 
 #homewindow {
-      padding-top: 10%;
-      padding-left :5%;
-      padding-right :5%;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+  border-color: darkgreen;
+  width: 55%;
+  font-size: xx-large;
+  color: chartreuse;
+  background-color: black;
+  padding: 10%;
+
+}
+
+.nav-item {
+  border-style: ridge;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: silver;
+  background-color: forestgreen;
+
+  margin-left: 35px;
+  margin-right: 35px;
+  color: black;
+  font-weight: bold;
 }
 
 
-  @media screen and (min-width: 972px) {
-  #mmlogosmall {     display:none;       
-                        
-  }
-  }
-  @media screen and (max-width: 972px) {
-    #mmlogomed {     display:none;   
-                      
-    
-  }
-  }
- 
-  @media screen and (max-width: 1350px) {
-    .header {     padding-left:10%;   
-                  padding-right:10%;
-  }
-  }
 
-  @media screen and (max-width: 800px) {
-    #hudwindow {   
-                  
-                  width: 50%;
-                  height: 50%;
-                  order:1;
-                  flex-basis: 100%;
-                  }
+
+
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(81, 113, 50);
+  padding-top: 7%;
+  margin-top: 3;
+
+}
+
+#ruleswindow {
+  padding: 10%;
+  margin-left: -14%;
+}
+
+#homewindow {
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+@media screen and (min-width: 972px) {
+  #mmlogosmall {
+    display: none;
+
   }
+}
 
- @media screen and (max-width: 800px) {
-    #p1window {    
-                            
-                           
-                           
-                           order: 2;
-                           flex-basis: 49%;
-                           row-gap: 10px;
-                           font-size: 10px;
-                           max-height: 70%;
-                           
+@media screen and (max-width: 972px) {
+  #mmlogomed {
+    display: none;
 
-    }
+
   }
+}
 
-  @media screen and (max-width: 800px) {
-    #cpuwindow {          
-                           
-                          order: 2;
-                          flex-basis: 49%;
-                          font-size: 10px;
-                          max-height: 70%;
-                          
-               }
+@media screen and (max-width: 1350px) {
+  .header {
+    padding-left: 10%;
+    padding-right: 10%;
   }
+}
 
-  /*@media screen and (min-width: 1000px) {
+@media screen and (max-width: 800px) {
+  #hudwindow {
+
+    width: 50%;
+    height: 50%;
+    order: 1;
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #p1window {
+
+
+
+    order: 2;
+    flex-basis: 49%;
+    row-gap: 10px;
+    font-size: 10px;
+    max-height: 70%;
+
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #cpuwindow {
+
+    order: 2;
+    flex-basis: 49%;
+    font-size: 10px;
+    max-height: 70%;
+
+  }
+}
+
+/*@media screen and (min-width: 1000px) {
   #hudwindow {
               object-fit: fill;
               background-image: url("assets/images/greenhud350.png");
              }
   }*/
-
-
-
-
-  
