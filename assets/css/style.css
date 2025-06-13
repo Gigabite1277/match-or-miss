@@ -26,7 +26,7 @@
   border-radius: 6px;
   border-color: darkgreen;
   width: 15%;
-  height: 100%;
+  max-height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,6 +35,8 @@
   padding-top: 2%;
   color: chartreuse;
   font-size: 30px;
+  
+
 }
 
 #p1window {
@@ -55,7 +57,7 @@
   justify-content: space-around;
   justify-content: center;
   text-align: center;
-  padding-top: 4%;
+ 
   color: chartreuse;
   font-size: 25px;
 }
@@ -86,24 +88,30 @@ body {
 .header {
   grid-area: header;
   background-color: rgb(32, 33, 32);
-  padding-left: 25%;
-  padding-right: 25%;
+ justify-content: center;
 
 }
 
+#mmlogosmall {
+align-self: center;
+margin-left: 27%;
+margin-right: 27%;
+}
+#mmlogomed {
+align-self: center;
+margin-left: 27%;
+margin-right: 27%;
+}
 .content {
   grid-area: content;
   background-color: rgb(46, 46, 46);
   display: flex;
   flex-wrap: wrap;
   padding-top:5% ;
-padding-left: 15%;
-padding-right: 10%;
-padding-bottom: 5%;
+  padding-bottom:5%;
+  
   justify-content: space-around;
-
-
-
+  
 }
 
 .content1 {
@@ -116,7 +124,7 @@ padding-bottom: 5%;
   /*padding-right: 5%;*/
   padding-bottom: 5%;
   justify-content: space-around;
-
+  
 
 }
 .content2 {
@@ -124,11 +132,13 @@ padding-bottom: 5%;
   background-color: rgb(46, 46, 46);
   display: flex;
   flex-wrap: wrap;
-  padding-top: 10%;
+  
  
   /*padding-right: 5%;*/
   padding-bottom: 5%;
   justify-content: center;
+
+   
 }
 li {
   color: black;
@@ -158,6 +168,8 @@ li {
   display: flex;
   justify-content: center;
   background-color: black;
+  margin-left:20px;
+  margin-right:20px;
 }
 
 #countdown {
@@ -195,10 +207,11 @@ li {
   border-radius: 6px;
   border-color: darkgreen;
   width: 55%;
-  font-size: xx-large;
+  font-size: 35px;
   color: chartreuse;
   background-color: black;
-  padding: 10%;
+  padding: 13%;
+  align-items: center;
 
 }
 
@@ -233,11 +246,8 @@ li {
   margin-left: -14%;
 }*/
 
-#homewindow {
-  padding-top: 10%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
+
+
 
 
 @media screen and (min-width: 972px) {

@@ -1,5 +1,8 @@
 
 
+
+let health = 1;
+
 var c = setInterval(showclock,1000)
  function showclock(){
  var seconds = document.getElementById("countdown").textContent;
@@ -66,7 +69,7 @@ document.getElementById("cpudeck1").src = deck[random];
 document.getElementById("p1deck1").src = deck1[random1];
 document.getElementById("p1deck2").src = deck2[random2];
 document.getElementById("p1deck3").src = deck3[random3];
-}
+
 function randomValue() {
   return random  
   }
@@ -79,8 +82,6 @@ function randomValue() {
         function randomValue3() {
           return random3  
             }
-          
-
 /**
  *This code shows the card for 1 second before being hidden although data should be available 
  *to the CPU to run a comparison with the other P1 deck
@@ -91,7 +92,7 @@ document.getElementById("cpudeck1").style.visibility = "hidden";
 }
 
 /**
- * Onclick commands to check which ever deck is clicked on against cpudeck1.
+ * Onclick commands for the returned calculateCorrectAnswer array.
  * 
  */
 document.getElementById("p1deck1").onclick = function() {cardCheck1()};
@@ -169,7 +170,7 @@ function cardCheck2(random, random2) {
                 }
                
     } 
-  
+  }
 
 function cardReveal(){
 document.getElementById("cpudeck1").style.visibility = "";
@@ -177,17 +178,16 @@ document.getElementById("cpudeck1").style.visibility = "";
 
 
 
-
 function healthDeduct(health) {
-  
-     if (health > 0)
-      --health;
-            document.getElementById("health").innerHTML =  "health" - 1;
+        
+
+     if (health > 1)
+            document.getElementById("health").innerHTML =  --health;
             
         if (health === 0) {
             document.getElementById("status").innerHTML = "Game Over";
             // Additional logic to end the game
         }
-      }
-    
-
+    }
+  
+  
