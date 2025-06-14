@@ -1,7 +1,7 @@
 
 
 
-let health = 1;
+var health = 1;
 
 var c = setInterval(showclock,1000)
  function showclock(){
@@ -40,6 +40,9 @@ cardNoise.addEventListener("click", cardnoise);
 document.getElementById("p1deck1").addEventListener("click", cardReveal);
 document.getElementById("p1deck2").addEventListener("click", cardReveal);
 document.getElementById("p1deck3").addEventListener("click", cardReveal);
+
+
+
 
 //Function: to play cardnoise sound effect when PLAY button is clicked
 function cardnoise() {

@@ -68,10 +68,9 @@
   border-style: solid;
   border-width: 3px;
   border-radius: 5px;
-  border-color: darkgreen;
+  border-color: #006400;
   padding: 5px;
   font-size: x-large;
-
 }
 
 
@@ -88,7 +87,7 @@ body {
 .header {
   grid-area: header;
   background-color: rgb(32, 33, 32);
- justify-content: center;
+ 
 
 }
 
@@ -197,7 +196,7 @@ li {
   font-size: xx-large;
   color: chartreuse;
   background-color: black;
-  padding: 10%;
+  padding: 5%;
 
 }
 
@@ -314,3 +313,4 @@ li {
               background-image: url("assets/images/greenhud350.png");
              }
   }*/
+  

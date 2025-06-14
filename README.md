@@ -3,12 +3,12 @@
 ## Strategy
 ## Project Goals
 
-  * To build a card playing game in which the user trys to match cards flashed on screenbefore they disappear.
-  * By doing so the user is able to progress on to further rounds of the game.
+  * To build a card playing game in which the user tries to match their cards to one flashed on screenbefore after it's disappeared.
+  
 ## User Goals
 
-  * To guess the correct card afre it flashes on screen
-  * To complete as many rounds until Miss Points reach zero
+  * To guess the correct card after it flashes on screen
+  * To complete as many matches until Miss Points reach zero
   
 ---
 
@@ -27,13 +27,15 @@ User is able to play a card game by himself
 ##  Skeleton + Surface
 ### Design Choices
 
+![Match or Miss Wireframes](https://github.com/Gigabite1277/match-or-miss/blob/main/README.DOCS/Wireframes Final.png  "Logo Title Text 1")
+
 #### Fonts
   * The chosen primary font is Arial with the chosen font colour being black.
   * The chosen secondary font is Lucida Sans with the chosen font colour being black.
 
 Icons
 
-  * Icons that are related to the Turbo Grafx family of consoles and games will be used accross this project.
+  * Icons that are related to the Playing cards will be used accross this project.
   
 
 Colours
