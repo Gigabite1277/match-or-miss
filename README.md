@@ -14,7 +14,7 @@
 
 ## User Stories
 
-#### User Story - One : Couldn't afford the Turbo Grafx when I was young
+#### User Story - One : I used to love playing cards games on my old PC
 
   * "I just love card games and would really love a card game I can play by myself when I'm bored.".
 
@@ -106,20 +106,9 @@ Via Git Hub
 ---
 
 ## Testing:
-CARDCHECKER:
-Ran manual tests on each cardchecker function  1 2 and 3 with correct results when arguments are triggered e.g "random card === random1 card".
+PLEASE REVIEW THE LINKED DOCUMENT REGARDING TESTING, UX ETC
 
-SOUNDS:
-Tested to ensure correct sounds were triggerd if there was a Match or Miss outcome.
-
-The web application was tested across Chrome, firefox and MS Edge successfuly.
-
-## Bugs:
-LOOPS:
-I was ubale to create the desired game loop when Player 1 Miss Points reached zero.
-
-Game Over message:
-Despite adding the innerHTML code I was unable to make to get the status to display the "Game Over" message
+https://github.com/Gigabite1277/match-or-miss/blob/main/README.DOCS/momtestingdoc.pdf
 
 ### Code
 All code written by me.

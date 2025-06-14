@@ -1,8 +1,6 @@
 
 
 
-var health = 1;
-
 var c = setInterval(showclock,1000)
  function showclock(){
  var seconds = document.getElementById("countdown").textContent;
@@ -41,9 +39,6 @@ document.getElementById("p1deck1").addEventListener("click", cardReveal);
 document.getElementById("p1deck2").addEventListener("click", cardReveal);
 document.getElementById("p1deck3").addEventListener("click", cardReveal);
 
-
-
-
 //Function: to play cardnoise sound effect when PLAY button is clicked
 function cardnoise() {
 document.getElementById("cardnoise1").play();
@@ -60,10 +55,10 @@ document.getElementById("cpubutton").onclick = function() {cpuplay()};
 function cpuplay(random, random1, random2, random3) {
 
   
-deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png"];
-deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png"];
-deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png"];
-deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png","assets/images/newdeck/10_of_diamonds.png"];
+deck = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
+deck1 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
+deck2 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
+deck3 = ["assets/images/newdeck/2_of_diamonds.png","assets/images/newdeck/3_of_diamonds.png","assets/images/newdeck/3_of_hearts.png","assets/images/newdeck/10_of_diamonds.png"];
 random = Math.floor(Math.random(deck) *deck.length);
 random1 = Math.floor(Math.random(deck1) *deck1.length);
 random2 = Math.floor(Math.random(deck2) *deck2.length);
@@ -182,10 +177,10 @@ document.getElementById("cpudeck1").style.visibility = "";
 
 
 function healthDeduct(health) {
-        
-
-     if (health > 1)
-            document.getElementById("health").innerHTML =  --health;
+  var health = 1;
+     if (health > 0)
+      --health;
+            document.getElementById("health").innerHTML =  health;
             
         if (health === 0) {
             document.getElementById("status").innerHTML = "Game Over";
