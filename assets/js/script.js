@@ -105,9 +105,9 @@ document.getElementById("p1deck3").onclick = function() {cardCheck3()};
 
 
 
-
+{
 function cardCheck1(random, random1) {
-  
+
 random = document.getElementById("cpudeck1").innerHTML = randomValue();
 random1 = document.getElementById("p1deck1").innerHTML = randomValue1();
 
@@ -121,7 +121,7 @@ if (random === random1){
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
   document.getElementById("health").innerHTML = healthDeduct(); 
-  document.getElementById("health").innerHTML = --health;
+  //document.getElementById("health").innerHTML = --health;
   
   }
 }
@@ -142,7 +142,7 @@ function cardCheck2(random, random2) {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
     document.getElementById("health").innerHTML = healthDeduct();
-   document.getElementById("health").innerHTML = --health;
+   //document.getElementById("health").innerHTML = --health;
     
     } 
    
@@ -163,29 +163,29 @@ function cardCheck2(random, random2) {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
       document.getElementById("health").innerHTML = healthDeduct();
-      document.getElementById("health").innerHTML = --health;
+      //document.getElementById("health").innerHTML = --health;
       
                 }
                
     } 
   }
-
+}
 function cardReveal(){
 document.getElementById("cpudeck1").style.visibility = "";
 }
 
 
-
+var  health =  10; // Initial health value
 function healthDeduct(health) {
-  var health = 1;
+
      if (health > 0)
       --health;
             document.getElementById("health").innerHTML =  health;
-            
-        if (health === 0) {
+
+           if (health === 0) {
             document.getElementById("status").innerHTML = "Game Over";
             // Additional logic to end the game
         }
     }
   
-  
+
