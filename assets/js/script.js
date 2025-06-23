@@ -1,6 +1,6 @@
 
  
-let  health =  10; // Initial health value
+var  health =  1; // Initial health value
   
 
 var c = setInterval(showclock,1000)
@@ -122,8 +122,8 @@ if (random === random1){
 } else {
   document.getElementById("status").innerHTML = "MISS";
   document.getElementById("miss-sound").play();
-  document.getElementById("health").innerHTML = healthDeduct(); 
-  //document.getElementById("health").innerHTML = --health;
+  //document.getElementById("health").innerHTML = healthDeduct(); 
+  document.getElementById("health").innerHTML = --health;
   
   }
 }
@@ -143,8 +143,8 @@ function cardCheck2(random, random2) {
   } else {
     document.getElementById("status").innerHTML = "MISS";
     document.getElementById("miss-sound").play();
-    document.getElementById("health").innerHTML = healthDeduct();
-   //document.getElementById("health").innerHTML = --health;
+    //document.getElementById("health").innerHTML = healthDeduct();
+   document.getElementById("health").innerHTML = --health;
     
     } 
    
@@ -164,8 +164,8 @@ function cardCheck2(random, random2) {
   else {
       document.getElementById("status").innerHTML = "MISS";
       document.getElementById("miss-sound").play();
-      document.getElementById("health").innerHTML = healthDeduct();
-      //document.getElementById("health").innerHTML = --health;
+      //document.getElementById("health").innerHTML = healthDeduct();
+      document.getElementById("health").innerHTML = --health;
       
                 }
                
@@ -181,17 +181,17 @@ document.getElementById("cpudeck1").style.visibility = "";
   
   
 
-function healthDeduct(health) {
-    if (health > 1) {
-        --health;
-        document.getElementById("health").innerHTML = health;
-    } else if (health === 0) {
-        health = 0;
-        document.getElementById("status").innerHTML = "Game Over";
+//function healthDeduct(health) {
+    //if (health > 1) {
+        //--health;
+    
+    //} else if (health === 0) {
+       
+        //document.getElementById("status").innerHTML = "Game Over";
         // Additional logic to end the game
-    }
-    return health;
-}
+    //}
+    //return health;
+//}
     
 
  
