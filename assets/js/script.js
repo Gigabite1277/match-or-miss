@@ -1,5 +1,7 @@
 
-
+ 
+let  health =  10; // Initial health value
+  
 
 var c = setInterval(showclock,1000)
  function showclock(){
@@ -105,7 +107,7 @@ document.getElementById("p1deck3").onclick = function() {cardCheck3()};
 
 
 
-{
+
 function cardCheck1(random, random1) {
 
 random = document.getElementById("cpudeck1").innerHTML = randomValue();
@@ -169,23 +171,29 @@ function cardCheck2(random, random2) {
                
     } 
   }
-}
+
 function cardReveal(){
 document.getElementById("cpudeck1").style.visibility = "";
 }
 
 
-var  health =  10; // Initial health value
-function healthDeduct(health) {
-
-     if (health > 0)
-      --health;
-            document.getElementById("health").innerHTML =  health;
-
-           if (health === 0) {
-            document.getElementById("status").innerHTML = "Game Over";
-            // Additional logic to end the game
-        }
-    }
+ 
   
+  
+
+function healthDeduct(health) {
+    if (health > 1) {
+        --health;
+        document.getElementById("health").innerHTML = health;
+    } else if (health === 0) {
+        health = 0;
+        document.getElementById("status").innerHTML = "Game Over";
+        // Additional logic to end the game
+    }
+    return health;
+}
+    
+
+ 
+
 
