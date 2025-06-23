@@ -73,6 +73,19 @@
   font-size: x-large;
 }
 
+#cpubutton .cpubuttontext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
 
 body {
   margin-top: 5%;
@@ -108,9 +121,8 @@ margin-right: 27%;
   flex-wrap: wrap;
   padding-top:5% ;
   padding-bottom:5%;
-  
   justify-content: space-around;
-  
+  padding-left: 7%;
 }
 
 .content1 {
@@ -119,7 +131,7 @@ margin-right: 27%;
   display: flex;
   flex-wrap: wrap;
   padding-top: 10%;
- 
+
   /*padding-right: 5%;*/
   padding-bottom: 5%;
   justify-content: space-around;
@@ -206,10 +218,10 @@ li {
   border-radius: 6px;
   border-color: darkgreen;
   width: 55%;
-  font-size: 35px;
+  font-size: 55px;
   color: chartreuse;
   background-color: black;
-  padding: 13%;
+  padding: 5%;
   align-items: center;
 
 }
@@ -227,8 +239,10 @@ li {
   font-weight: bold;
 }
 
-
-
+.nav-item:hover {
+  background-color: olive;
+  font-size: 17px;
+}
 
 
 

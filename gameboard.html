@@ -39,10 +39,19 @@
 
 <div id="cpuwindow"><br>
   <h3>CPU</h3>
+  <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="MATCH ME WITH A PLAYER 1 CARD!">
   <img src="assets/images/nodata100.png" id="cpudeck1"  width="68" height="100" alt="The No Data Card"><br>
+  </span>
       <div Remaining Targets:></div>
       <div id="enemiesleft"></div>
+      
+      <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="CLICK ME TO SHUFFLE ALL CARD DECKS ">
       <button id="cpubutton"  onclick="cardnoise()" onclick="cpuplay()" onclick="cardCheck()"  type="button">DEAL</button>
+      </span>
+
+      <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="CLICK ME TO RESET THE GAME BOARD ">
+      <a class="nav-link" href="gameboard.html"><button id="cpubutton"  onclick="cardnoise()" type="button">RESET</button></a>
+      </span>
          </div>
     
     
@@ -69,9 +78,11 @@
     </div>
      <!--This is the code for the Player 1 window hold the three cards-->
      <div id="p1window">Player 1<br> 
+      <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="IF I MATCH THE CPU CARD CLICK ON ME!">
       <img id="p1deck1" tabindex="1 "onkeydown="cardCheck1()" src="assets/images/nodata100.png"  onclick="cardCheck1()" onclick="cpuplay()">
       <img id="p1deck2" tabindex="2" src="assets/images/nodata100.png"  onclick="cardCheck2()" onclick="cpuplay()">
       <img id="p1deck3" tabindex="3" src="assets/images/nodata100.png"  onclick="cardCheck3()" onclick="cpuplay()">
+      </span>
       <!--<img id="p1deck4" src="assets/images/nodata100.png"  onclick="cardCheck4()" onclick="cpuplay()">-->
       
       <div>Miss Points:</div><div id="health">10<br><div id="status">STATUS:</div>
