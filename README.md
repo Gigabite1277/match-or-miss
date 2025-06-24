@@ -107,11 +107,9 @@ Via Git Hub
 
 ## Testing:
 PLEASE REVIEW THE LINKED DOCUMENT REGARDING TESTING, UX ETC
-
-## IMPROVMENTS:
 https://github.com/Gigabite1277/match-or-miss/blob/main/README.DOCS/momtestingdoc.pdf
 
-
+## IMPROVMENTS:
 https://github.com/Gigabite1277/match-or-miss/blob/main/README.DOCS/MSP-2-IMPROVEMENTS-LISTS-(ADDITIONAL).pdf
 
 ### Code
