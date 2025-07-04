@@ -22,20 +22,20 @@ User is able to play a card game by himself
 ##  User's Experience 
 ##  In Game Screenshots of the Finished Project that met user expectations
 
-*DEAL THE CARDS (User clicks "DEAL" button. Both User (player 1) and CPU decks are shuffled, with CPU card disappearing after 2 seconds) 
+*DEAL THE CARDS - User clicks "DEAL" button. Both User (player 1) and CPU decks are shuffled, with CPU card disappearing after 2 seconds 
 
 ![Card Deal](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/momdeal.jpg "Picture of the games deal screen")
 
 
-*It's a Match!  (User has clicked on and matched their Player 1 card, 2 of Diamonds, with the CPU card, 2 of Diamonds). 
+*It's a Match! - User has clicked on and matched their Player 1 card, 2 of Diamonds, with the CPU card, 2 of Diamonds. 
 ![Card Pick](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/mommatch.jpg "Picture of card being picked")
 
 
-*2nd DEAL (User goes for a 2nd deal of the cards, with CPU card disappearing after 2 seconds) 
+*2nd DEAL - User goes for a 2nd deal of the cards, with CPU card disappearing after 2 seconds
 ![2nd Deal ](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/mom2ndeal.jpg "Picture of the games deal screen")
 
 
-*It's a MISS  The user Player 1, has selected a different card (3 of Hearts) to that on CPU deck  (2 of diamonds)
+*It's a MISS - The user Player 1, has selected a different card (3 of Hearts) to that on CPU deck, 2 of diamonds
 ![It's a Miss](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/mommiss2.png "Picture of the games miss screen")
 
 
