@@ -32,17 +32,18 @@ User is able to play a card game by himself
 
 
 *2nd DEAL (User goes for a 2nd deal of the cards, with CPU card disappearing after 2 seconds) 
-*It's a Match!  (User has clicked on and matched their Player 1 card, 2 of Diamonds, with the CPU card, 2 of Diamonds). 
 ![2nd Deal ](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/mom2ndeal.jpg "Picture of the games deal screen")
 
-*It's a MISS  (The user (Player 1) has selected a different card (3 of Hearts) to that on CPU deck  (2 of diamonds))
+*It's a MISS  The user Player 1, has selected a different card (3 of Hearts) to that on CPU deck  (2 of diamonds)
+
+
+
+![It's a Miss](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/Missscreennew.png "Picture of the games miss screen")
+
 
               ##YOUR MISS POINTS ARE ZERO, IT'S GAME OVER  
 
                           ##PRESS RESET TO TRY AGAIN
-
-![2nd Deal ](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/Missscreennew.png "Picture of the games miss screen")
-
 ---
 
 
