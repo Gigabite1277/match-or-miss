@@ -24,19 +24,19 @@ User is able to play a card game by himself
 
 *DEAL THE CARDS - User clicks "DEAL" button. Both User (player 1) and CPU decks are shuffled, with CPU card disappearing after 2 seconds 
 
-![Card Deal](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/momdeal.jpg "Picture of the games deal screen")
+![Card Deal](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/deal.png "Picture of the games deal screen")
 
 
-*It's a Match! - User has clicked on and matched their Player 1 card, 2 of Diamonds, with the CPU card, 2 of Diamonds. 
-![Card Pick](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/mommatch.jpg "Picture of card being picked")
+*It's a Match! - User has clicked on and matched their Player 1 card, (3 of Hearts), with the CPU card, (3 0f Heart). 
+![Card Pick](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/itsamatch.png "Picture of card being picked and matching")
 
 
 *2nd DEAL - User goes for a 2nd deal of the cards, with CPU card disappearing after 2 seconds
-![2nd Deal ](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/mom2ndeal.jpg "Picture of the games deal screen")
+![2nd Deal ](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/2nddeal.png "Picture of the games deal screen")
 
 
-*It's a MISS - The user Player 1, has selected a different card (3 of Hearts) to that on CPU deck, 2 of diamonds
-![It's a Miss](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/mommiss2.png "Picture of the games miss screen")
+*It's a MISS - The user (Player 1) has selected a different card (10 of Diamonds) to that on CPU deck (3 of Hearts) it's a miss.
+![It's a Miss](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/itsamiss.png "Picture of the games miss screen")
 
 
                       ##YOUR MISS POINTS ARE ZERO, IT'S GAME OVER  
