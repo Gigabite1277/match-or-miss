@@ -27,7 +27,7 @@ User is able to play a card game by himself
 ![Card Deal](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/deal.png "Picture of the games deal screen")
 
 
-*It's a Match! - User has clicked on and matched their Player 1 card, (3 of Hearts), with the CPU card, (3 0f Heart). 
+*It's a Match! - User has clicked on and matched their Player 1 card, (3 of Hearts), with the CPU card, (3 0f Hearts). 
 ![Card Pick](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/itsamatch.png "Picture of card being picked and matching")
 
 
@@ -39,9 +39,9 @@ User is able to play a card game by himself
 ![It's a Miss](https://github.com/Gigabite1277/match-or-miss/blob/main/assets/images/itsamiss.png "Picture of the games miss screen")
 
 
-                      ##YOUR MISS POINTS ARE ZERO, IT'S GAME OVER  
+                                ##YOUR MISS POINTS ARE ZERO, IT'S GAME OVER  
 
-                              ##PRESS RESET TO TRY AGAIN
+                                      ##PRESS RESET TO TRY AGAIN
 ---
 
 
